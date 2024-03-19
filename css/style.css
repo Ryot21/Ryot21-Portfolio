@@ -3620,6 +3620,19 @@ button.swiper-pagination-bullet {
   transform: translateX(0%);
   box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
 }
+.c-hnav__cheakbox::before {
+  content: "";
+  position: absolute;
+  top: 2%;
+  left: 0;
+  width: 50px;
+  height: 200px;
+  background: white;
+  border-radius: 20px 0 0 20px;
+  border-top: 1px solid #3b3b3b;
+  border-left: 1px solid #3b3b3b;
+  border-bottom: 1px solid #3b3b3b;
+}
 .c-hnav__button {
   display: inline-block;
   width: 34px;
@@ -3693,6 +3706,7 @@ button.swiper-pagination-bullet {
   height: 100%;
   padding: 5% 5% 0 5%;
   background: #ffffff;
+  border-left: 1px solid #3b3b3b;
   /* 滑らかに表示 */
   transition: 0.3s ease-in-out;
   transform: translateX(100%);
