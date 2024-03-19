@@ -1,14 +1,9 @@
-// 2. コンセプトページ
-.p-concept{
+// 2. 制作実績ページ
+.p-works{
 	width: 100vw;
 	height: 100vh;
 	animation: fadeAnime 2s forwards;
 	@include min(768){
 		animation: fadeAnime 2s forwards;
-	}
-	.testBox{
-		width: 100vw;
-		height: 150vh;
-		background: rgba(0, 0, 0, 0.392);
 	}
 }

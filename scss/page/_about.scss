@@ -1,0 +1,10 @@
+// 3. 自己紹介ページ
+
+.p-about{
+	width: 100vw;
+	height: 100vh;
+	animation: fadeAnime 2s forwards;
+	@include min(768){
+		animation: fadeAnime 2s forwards;
+	}
+}

@@ -32,14 +32,10 @@
 @import "./components/dropmenu";// ドロップメニュー
 
 // 各ページ
-@import "./page/top";
-@import "./page/concept";
-@import "./page/layout";
-@import "./page/plan";
-@import "./page/equipment";
-@import "./page/location";
-@import "./page/quality";       // 基本使わない。
-@import "./page/overview";      // 基本使わない。
+@import "./page/top";           // TOPページ
+@import "./page/works";         // 制作実績ページ
+@import "./page/about";         // 自己紹介ページ
+@import "./page/contact";       // お問い合わせページ
 
 /*
     アニメーション
