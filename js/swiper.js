@@ -1,5 +1,5 @@
-        // 施工例スライダー
-        const buildSwiper = new Swiper(".swiper-Build", {
+        // cardスライダー
+        const cardSwiper = new Swiper(".swiper-card", {
             effect: 'slide',
             mousewheel: {
                 invert: false,
