@@ -1,15 +1,44 @@
 // 1. TOPページ
 
 .p-top{
+	position: relative;
 	width: 100vw;
 	height: 100vh;
 	animation: fadeAnime 3s forwards;
-	@include min(768){
-		animation: fadeAnime 2s forwards;
-	}
-	.testBox{
-		width: 100vw;
-		height: 150vh;
-		background: rgba(0, 0, 0, 0.392);
+	@include min(768){animation: fadeAnime 2s forwards;}
+	&.-page-bg{
+		position: relative;
+		background: $site-color04;
+		&::before{
+			content: "RYOTA MAEDA";
+			color: #d6d6d653;
+			font-family: e-font01;
+			font-size: clamp(2.1rem, 3vw, 4.8rem);
+			letter-spacing: .5rem;
+			position: fixed;
+			top: 55%;
+			left: 51%;
+			transform: translate(-50%, -50%);
+		}
+		&::after{
+			content: "IT IS A FREELANCE ENGINEER'S PORTFOLIO SITE";
+			color: #d6d6d653;
+			font-family: e-font01;
+			font-size: clamp(2.1rem, 3vw, 4.8rem);
+			letter-spacing: .5rem;
+			text-wrap: nowrap;
+			position: fixed;
+			top: 50%;
+			left: 51%;
+			transform: translate(-50%, -50%);
+		}
+		.page-inner{
+			// background: url(../images/sns/site-logo-border02.png);
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 30%;
+			opacity: .75;
+		}
 	}
 }
