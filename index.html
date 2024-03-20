@@ -26,27 +26,78 @@
     <script src="js/swiper.min.js"></script>
 </head>
 <body class="p-top">
-	    <!-- ハンバーガーメニュー -->
-			<nav class="c-hnav a-scroll-on">
-				<input id="c-hnav__checkbox" class="c-hnav__cheakbox" type="checkbox"/>
-				<label class="c-hnav__button" for="c-hnav__checkbox">
-								<span></span>
-						</label>
-				<label id="" class="c-hnav__cheakbox c-hnav__close" for="c-hnav__checkbox"></label>
-				<div class="c-hnav__content">
-					<ul class="">
-						<li class="mgb8 mgb8s"><a class="s-L -ls-3 -f-En01 -left -active"  href="index.html">TOP</a></li>
-						<li class="mgb8 mgb8s"><a class="s-L -ls-3 -f-En01 -left"  href="works.html">WORKS</a></li>
-						<li class="mgb8 mgb8s"><a class="s-L -ls-3 -f-En01 -left"  href="about.html">ABOUT</a></li>
-						<li class="mgb8 mgb8s"><a class="s-L -ls-3 -f-En01 -left"  href="contact.html">CONTACT</a></li>
-					</ul>
-								<!--　ハンバーガー > ロゴ関係 -->
-								<!-- <div class="c-hnav__logo"><img src="images/logo/site-logo.svg" alt=""></div>
-								<div class="c-hnav__icon"><img src="images/favicon.ico" alt=""></div> -->
-				</div>
-			</nav>
-		
+  <!-- ハンバーガーメニュー -->
+  <nav class="c-hnav a-scroll-on">
+    <input id="c-hnav__checkbox" class="c-hnav__cheakbox" type="checkbox"/>
+    <label class="c-hnav__button" for="c-hnav__checkbox">
+            <span></span>
+        </label>
+    <label id="" class="c-hnav__cheakbox c-hnav__close" for="c-hnav__checkbox"></label>
+    <div class="c-hnav__content">
+      <ul class="">
+        <li class="mgb8 mgb8s"><a class="s-L -ls-3 -f-En01 -left -active"  href="index.html">TOP</a></li>
+        <li class="mgb8 mgb8s"><a class="s-L -ls-3 -f-En01 -left"  href="works.html">WORKS</a></li>
+        <li class="mgb8 mgb8s"><a class="s-L -ls-3 -f-En01 -left"  href="about.html">ABOUT</a></li>
+        <li class="mgb8 mgb8s"><a class="s-L -ls-3 -f-En01 -left"  href="contact.html">CONTACT</a></li>
+      </ul>
+            <!--　ハンバーガー > ロゴ関係 -->
+            <!-- <div class="c-hnav__logo"><img src="images/logo/site-logo.svg" alt=""></div>
+            <div class="c-hnav__icon"><img src="images/favicon.ico" alt=""></div> -->
+    </div>
+  </nav>
+  <!-- header / TOPと各ページの構造が異なる -->
+  <header id="header" class="c-header pdt1">
+      <div class="c-header-wrapper">
+          <ul class="c-header__lists">
+              <li class="c-header__logoArea">
+                  <div class="c-contents -h-logo">
+                      <div class="imgBox">
+                          <img src="https://via.placeholder.com/757x110/?text=250x250" alt="STARTLINE">
+                      </div>
+                  </div>
+              </li>
+              <li class="tb-pc c-header__navArea">
+                <!-- ナビ -->
+                <nav class="c-header__navBox -navBorder">
+                  <ul class="c-header__navLists -col4">
+                      <li class="navItem -no-b">
+                          <a href="index.html" class="navItem__link -lh-1">
+                              <span class="navItem-title -main s-M -s-nav">TOP</span>
+                          </a>
+                      </li>
+                      <li class="navItem -no-b">
+                          <a href="concept.html" class="navItem__link -lh-1">
+                              <span class="navItem-title -main s-M -s-nav">WORKS</span>
+                          </a>
+                      </li>
+                      <li class="navItem -no-b">
+                          <a href="layout.html" class="navItem__link -lh-1">
+                              <span class="navItem-title -main s-M -s-nav">ABOUT</span>
+                          </a>
+                      </li>
+                      <li class="navItem d-menu -no-b">
+                          <!-- ドロップメニュー -->
+                          <input id="d-menu__checkbox" class="d-menu__cheakbox" type="checkbox"/>
+                          <label class="d-menu__title -lh-1" for="d-menu__checkbox">
+                              <span class="navItem-title -main s-M -s-nav">CONTACT</span>
+                          </label>
+                          <ul class="d-menu__lists">
+                              <li class="d-menu__item">
+                                  <label class="d-menu__subTitle s-SS popup popup-open" for="popup01">制作依頼</label>
+                              </li>
+                              <li class="d-menu__item">
+                                  <label class="d-menu__subTitle s-SS popup popup-open" for="popup02">お仕事紹介</label>
+                              </li>
+                          </ul>
+                          <!-- //ドロップメニュー -->
+                      </li>
+                  </ul>
+                </nav>
+              </li>
+          </ul>
+      </div>
+  </header>
 
-      <div class="test" style="height: 150vh; width: 100vw;"></div>
+  <div class="test" style="height: 150vh; width: 100vw;"></div>
 </body>
 </html>
