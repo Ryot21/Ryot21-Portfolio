@@ -5,15 +5,12 @@
   left: 86%;
 	width: 33px;
 	height: 0;
-	z-index: 998;
+	z-index: 9999;
 	@include min(768){
-		top: 1.5%;
-		left: 94%;
-		opacity: .7;
+			left: 94%;
+			opacity: .7;
 	}
-	@include min(1200){
-		left: 95.5%;
-	}
+	@include min(1200){left: 95.5%;}
 	
 	&__cheakbox{
 		display: none;
@@ -82,7 +79,6 @@
 		transition: 0.3s ease-in-out;
 	}
 	&__content{// クリック後、表示されるWindow
-		// overflow: auto;
 		position: fixed;
 		top: 0;
 		right: -33px;// 栞部分を含む
@@ -135,7 +131,7 @@
 			letter-spacing: .2rem;
 			display: block;
 			position: absolute;
-			top: 6%;
+			top: 8%;
 			left: -42px;
 			transform: rotate(-90deg);
 		}

@@ -2844,16 +2844,6 @@ button.swiper-pagination-bullet {
     width: 70.4%;
   }
 }
-.c-header-wrapper::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  width: 100vw;
-  height: 1px;
-  background: #3b3b3b;
-}
 .c-header-wrapper.-no-b::after {
   background: #ffffff;
 }
@@ -2862,6 +2852,7 @@ button.swiper-pagination-bullet {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: center;
   }
 }
 .c-header .c-header__lists .c-header__logoArea {
@@ -2875,7 +2866,7 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-header .c-header__lists .c-header__logoArea {
-    width: 15%;
+    width: 4%;
   }
   .c-header .c-header__lists .c-header__logoArea img {
     vertical-align: baseline;
@@ -2997,7 +2988,7 @@ button.swiper-pagination-bullet {
   .c-header .c-header__lists .c-header__navArea .c-header__navBox.-navBorder .c-header__navLists li .d-menu__title::after {
     content: "";
     width: 90%;
-    height: 2.5px;
+    height: 1px;
     position: absolute;
     left: 50%;
     bottom: 1%;
@@ -3450,11 +3441,10 @@ button.swiper-pagination-bullet {
   left: 86%;
   width: 33px;
   height: 0;
-  z-index: 998;
+  z-index: 9999;
 }
 @media (width >= 768px) {
   .c-hnav {
-    top: 1.5%;
     left: 94%;
     opacity: 0.7;
   }
@@ -3594,7 +3584,7 @@ button.swiper-pagination-bullet {
   letter-spacing: 0.2rem;
   display: block;
   position: absolute;
-  top: 6%;
+  top: 8%;
   left: -42px;
   transform: rotate(-90deg);
 }

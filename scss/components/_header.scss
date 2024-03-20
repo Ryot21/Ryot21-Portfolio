@@ -3,7 +3,7 @@
 	width: 100vw;
 	height: auto;
 	background: $main-color--w;
-	// padding: 5px 0px 10px;
+	// border-bottom: 1px solid $main-color--b;
 	box-sizing: border-box;
 	transition: padding .3s;
 	@include min(768){
@@ -30,16 +30,6 @@
 		@include min(1600){
 			width: 70.4%;
 		}
-		&::after{
-			content: "";
-			position: absolute;
-			left: 50%;
-			bottom: 0;
-			transform: translateX(-50%);
-			width: 100vw;
-			height: 1px;
-			background: $main-color--b;
-		}
 		// ボーダーなし
 		&.-no-b{
 			&::after{
@@ -52,13 +42,14 @@
 			display: flex;
 			flex-wrap: nowrap;
 			justify-content: space-between;
+			align-items: center;
 		}
 		.c-header__logoArea{
 			width: 50%;
 			height: auto;
 			@include max(768){margin: 0 auto;}
 			@include min(768){
-				width: 15%;
+				width: 4%;
 				img{vertical-align: baseline;}
 			}
 		}
@@ -185,7 +176,7 @@
 									&::after{
 										content: "";
 										width: 90%;
-										height: 2.5px;
+										height: 1px;
 										position: absolute;
 										left: 50%;
 										bottom: 1%;
