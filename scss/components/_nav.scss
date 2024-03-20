@@ -25,22 +25,6 @@
 			transform: translateX(0%);
 			box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
 		}
-		&::before{
-			content: "";
-			position: absolute;
-			top: 2%;
-			left: 0;
-			width: 50px;
-			height: 200px;
-			background: white;
-			border-radius: 20px 0 0 20px;
-			border-top: 1px solid $main-color--b;
-			border-left: 1px solid $main-color--b;
-			border-bottom: 1px solid $main-color--b;
-			@include min(768){
-
-			}
-		}
 	}
 	&__button{
 		display: inline-block;
@@ -98,10 +82,10 @@
 		transition: 0.3s ease-in-out;
 	}
 	&__content{// クリック後、表示されるWindow
-		overflow: auto;
+		// overflow: auto;
 		position: fixed;
 		top: 0;
-		right: 0;
+		right: -33px;// 栞部分を含む
 
 		/* ハンバーガーメニュー内の幅 */
 		width: 55%;
@@ -125,6 +109,32 @@
 		@include min(1400){
 			width: 90%;
 			max-width: 330px;
+		}
+		&::before{// 栞部分
+			content: "";
+			position: absolute;
+			top: 1%;
+			left: -21px;
+			width: 20px;
+			height: 100px;
+			background: white;
+			border-radius: 20px 0 0 20px;
+			border-top: 1px solid $main-color--b;
+			border-left: 1px solid $main-color--b;
+			border-bottom: 1px solid $main-color--b;
+			@include min(768){
+
+			}
+		}
+		&::after{// 栞 > テキスト
+			content: "▼ NAVIGATION";
+			font-family: $f-english01;
+			letter-spacing: .2rem;
+			display: block;
+			position: absolute;
+			top: 6%;
+			left: -42px;
+			transform: rotate(-90deg);
 		}
 		li{
 			margin-bottom: 7px;

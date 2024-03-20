@@ -3620,19 +3620,6 @@ button.swiper-pagination-bullet {
   transform: translateX(0%);
   box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
 }
-.c-hnav__cheakbox::before {
-  content: "";
-  position: absolute;
-  top: 2%;
-  left: 0;
-  width: 50px;
-  height: 200px;
-  background: white;
-  border-radius: 20px 0 0 20px;
-  border-top: 1px solid #3b3b3b;
-  border-left: 1px solid #3b3b3b;
-  border-bottom: 1px solid #3b3b3b;
-}
 .c-hnav__button {
   display: inline-block;
   width: 34px;
@@ -3696,10 +3683,9 @@ button.swiper-pagination-bullet {
   transition: 0.3s ease-in-out;
 }
 .c-hnav__content {
-  overflow: auto;
   position: fixed;
   top: 0;
-  right: 0;
+  right: -33px;
   /* ハンバーガーメニュー内の幅 */
   width: 55%;
   max-width: 230px;
@@ -3725,6 +3711,29 @@ button.swiper-pagination-bullet {
     width: 90%;
     max-width: 330px;
   }
+}
+.c-hnav__content::before {
+  content: "";
+  position: absolute;
+  top: 1%;
+  left: -21px;
+  width: 20px;
+  height: 100px;
+  background: white;
+  border-radius: 20px 0 0 20px;
+  border-top: 1px solid #3b3b3b;
+  border-left: 1px solid #3b3b3b;
+  border-bottom: 1px solid #3b3b3b;
+}
+.c-hnav__content::after {
+  content: "▼ NAVIGATION";
+  font-family: e-font01;
+  letter-spacing: 0.2rem;
+  display: block;
+  position: absolute;
+  top: 6%;
+  left: -42px;
+  transform: rotate(-90deg);
 }
 .c-hnav__content li {
   margin-bottom: 7px;
