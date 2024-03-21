@@ -5956,11 +5956,11 @@ a {
   z-index: -1;
 }
 .p-top.-page-bg .page-inner {
+  background: url(../images/sns/site-logo-clear.png);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 30%;
-  opacity: 0.75;
+  background-size: 10%;
 }
 
 .p-works {
