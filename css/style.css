@@ -3852,6 +3852,7 @@ button.swiper-pagination-bullet {
 @media (width >= 768px) {
   .c-contents-inner {
     width: 95%;
+    max-width: 1100px;
   }
 }
 .c-contents.-h-logo {
@@ -6321,6 +6322,15 @@ a {
   .a-scroll-on {
     opacity: 0;
     animation: scroll-onNav;
+    animation-timeline: scroll();
+    animation-range: cover 0% cover 100%;
+  }
+}
+
+@keyframes scroll-outHeader {}
+@media (width >= 768px) {
+  .a-scroll-outHeader {
+    animation: scroll-outHeader;
     animation-timeline: scroll();
     animation-range: cover 0% cover 100%;
   }

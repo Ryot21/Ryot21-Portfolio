@@ -1,4 +1,4 @@
-
+// スクロール > 表示・出現
 @keyframes scroll-onLogo {
     0% {
         pointer-events: none;
@@ -53,6 +53,36 @@
     @include min(768){
         opacity: 0;
         animation: scroll-onNav;
+        animation-timeline: scroll();
+        animation-range: cover 0% cover 100%;
+    }
+      // &_btn{
+      // 	  position: sticky;
+      // 	  width: 10%;
+      // }
+
+      // &_logo{
+      // 	  position: sticky;
+      // 	  width: 10%;
+      // }
+
+}
+
+// スクロール > 消滅・縮小
+@keyframes scroll-outHeader {
+    0% {
+    }
+    25%{
+    }
+    50% {
+    }
+    100% {
+    }
+}
+
+.a-scroll-outHeader{
+    @include min(768){
+        animation: scroll-outHeader;
         animation-timeline: scroll();
         animation-range: cover 0% cover 100%;
     }
