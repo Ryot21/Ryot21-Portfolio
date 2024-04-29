@@ -1,6 +1,6 @@
 <template>
 		<!-- header / TOPと各ページの構造が異なる -->
-		<header id="header" class="c-header -fixed pdt1">
+		<header id="header" class="tb-pc c-header -fixed pdt1">
         <div class="c-header-wrapper pdb1"><!-- バナー表示エリア -->
             <div class="c-header__popArea">
                 <ul class="c-header__lists c-flex -h-c">
@@ -10,14 +10,14 @@
                     <li class="navArea c-mainNav -borderVer">
 											<ul class="c-mainNav__lists -col4">
 												<li class="navItem">
-														<a href="" class="-active navItem__link -lh-1">
+														<NuxtLink to="/" class="navItem__link -lh-1">
 															<span class="navItem-title -main -s-nav s-L -ls-3 -f-En01">TOP</span>
-														</a>
+														</NuxtLink>
 												</li>
 												<li class="navItem">
-														<a href="concept.html" class="navItem__link -lh-1">
+														<NuxtLink to="/about" class="navItem__link -lh-1">
 															<span class="navItem-title -main -s-nav s-L -ls-3 -f-En01">ABOUT</span>
-														</a>
+														</NuxtLink>
 												</li>
 												<li class="navItem d-menu">
 														<input id="d-menu__checkbox" class="d-menu__cheakbox" type="checkbox"/>
@@ -26,17 +26,17 @@
 														</label>
 														<ul class="d-menu__lists">
 																<li class="d-menu__item -top">
-																		<label class="d-menu__subTitle s-SS popup popup-open" for="popup01">サイト制作</label>
+																		<NuxtLink to="/works/products" class="d-menu__subTitle s-SS">サイト制作</NuxtLink>
 																</li>
 																<li class="d-menu__item -btm">
-																		<label class="d-menu__subTitle s-SS popup popup-open" for="popup02">SES事業</label>
+																		<NuxtLink to="/works/ses" class="d-menu__subTitle s-SS" >SES事業</NuxtLink>
 																</li>
 														</ul>
 												</li>
 												<li class="navItem">
-														<a href="" class="navItem__link -lh-1">
+														<NuxtLink to="/contact" class="navItem__link -lh-1">
 															<span class="navItem-title -main -s-nav s-L -ls-3 -f-En01">CONTACT</span>
-														</a>
+														</NuxtLink>
 												</li>
 											</ul>
 										</li>
@@ -47,3 +47,24 @@
     </header>
     <!-- //header -->
 </template>
+
+<style lang="scss">
+	.navItem{
+		.navItem__link,
+		.d-menu__title{
+			&.router-link-active{// アクティブ
+				pointer-events: none;
+				&::after{
+					background: #929090 !important;
+				}
+			}
+		}
+		.d-menu__subTitle{
+			&.router-link-exact-active{
+				color: #ffffff !important;
+				background: #929090 !important;
+			}
+		}
+	}
+
+</style>

@@ -1,5 +1,5 @@
 <template>
-	    <footer id="footer" class="c-footer mgt-2">
+    <footer id="footer" class="c-footer mgt-2">
         <div class="c-footer-wrapper mgb1 mgb10s">
             <div class="c-footer__contactArea">
                 <ul class="c-footer__contactLists">
@@ -39,24 +39,24 @@
                 <ul class="c-footer__navLists -col4">
                     <!-- アクティブ箇所に「.-active」を付与して下さい。 -->
                     <li class="navItem_footer mgb2">
-                        <a href="" class="-active -lh-1 -center">
+                        <NuxtLink to="/" class=" -lh-1 -center">
                             <span class="s-M -s-nav -ls-2 -f-En01">TOP</span>
-                        </a>
+                        </NuxtLink>
                     </li>
                     <li class="navItem_footer mgb2">
-                        <a href="" class="-lh-1 -center">
+                        <NuxtLink to="/about" class="-lh-1 -center">
                             <span class="s-M -s-nav -ls-2 -f-En01">ABOUT</span>
-                        </a>
+                        </NuxtLink>
                     </li>
                     <li class="navItem_footer mgb2">
-                        <a href="" class="-lh-1 -center">
-                            <span class="s-M -s-nav -ls-2 -f-En01">WEB</span>
-                        </a>
+                        <NuxtLink to="/works/products" class="-lh-1 -center">
+                            <span class="s-M -s-nav -ls-2 -f-En01">サイト制作</span>
+                        </NuxtLink>
                     </li>
                     <li class="navItem_footer mgb2">
-                        <a href="" class="-lh-1 -center">
-                            <span class="s-M -s-nav -ls-2 -f-En01">SES</span>
-                        </a>
+                        <NuxtLink to="/works/ses" class="-lh-1 -center">
+                            <span class="s-M -s-nav -ls-2 -f-En01">SES事業</span>
+                        </NuxtLink>
                     </li>
                 </ul>
             </nav>
@@ -65,11 +65,23 @@
         <div class="c-footer__shopArea">
             <ul class="c-footer__shopFlex">
                 <li><img src="~/assets/images/logo/site-logo02.png" alt="Ryot21-Portfolio | WEBエンジニア"></li>
-                <!-- <li>
-                    <img class="tb-pc" src="~/assets/images/logo/SVG/sample-tel.svg" alt="電話番号">
-                    <a class="sp" href="tel:電話番号"><img src="~/assets/images/logo/SVG/sample-tel.svg" alt="住協 〇〇支店 電話番号"></a>
-                </li> -->
             </ul>
         </div>
     </footer>
 </template>
+
+<style lang="scss">
+		.navItem_footer{
+			.router-link-active{// アクティブ
+                pointer-events: none;
+                span{
+                    color: #929090;
+                    &::after{
+                        width: 100% !important;
+                        height: 1px !important;
+                        background: #929090 !important;
+                    }
+                }
+			}
+		}
+</style>
