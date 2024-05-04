@@ -222,7 +222,10 @@
                 animation-duration:20s;
                 &::after,img{animation-duration:20s}
             }
-
+            &.-sp30 {
+                animation-duration:30s;
+                &::after,img{animation-duration:30s}
+            }
 
             // --------- スクロール化 ---------
             &.-sc-auto{
