@@ -384,11 +384,11 @@
 		}
 	}
 	&__shopArea{// 支店情報エリア
-		width: 60%;
+		width: 40%;
 		margin: auto;
 		@include min(768){
-			width: 40%;
-			max-width: 1000px;
+			width: 25%;
+			max-width: 500px;
 		}
 		.c-footer__shopFlex{
 			display: flex;

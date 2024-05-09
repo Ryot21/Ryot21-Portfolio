@@ -6,15 +6,13 @@
 .c-header{
 	width: 100lvw;
 	height: auto;
-	background: $main-color--w;
+	// background: $main-color--w;
 	// padding: 5px 0px 10px;
 	box-sizing: border-box;
 	transition: padding .3s;
-	@include min(768){
-		padding: 15px 0px 0px;
-	}
+
 	&.-fixed{//固定
-		position: fixed;
+		position: sticky;
 		top: 0;
 		left: 0;
 		z-index: 999;
@@ -64,14 +62,15 @@
 			}
 			li{
 				&.logoArea{// ロゴエリア
-					width: 50%;
+					width: 12%;
 					height: auto;
-					@include max(768){margin: auto;}
+					// @include max(768){margin: auto;}
 					@include min(768){
-						width: 20%;
+						width: 6%;
 						max-width: 80px;
 						img{vertical-align: baseline;}
 					}
+					@include min(1000){width: 20%;}
 				}
 				&.navArea{//ナビゲーションエリア
 					@include min(768){width: 50%;}

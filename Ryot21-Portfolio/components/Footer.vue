@@ -40,12 +40,12 @@
                     <!-- アクティブ箇所に「.-active」を付与して下さい。 -->
                     <li class="navItem_footer mgb2">
                         <NuxtLink to="/" class=" -lh-1 -center">
-                            <span class="s-M -s-nav -ls-2 -f-En01">TOP</span>
+                            <span class="s-M -s-nav -ls-2 -f-En01">トップ</span>
                         </NuxtLink>
                     </li>
                     <li class="navItem_footer mgb2">
                         <NuxtLink to="/about" class="-lh-1 -center">
-                            <span class="s-M -s-nav -ls-2 -f-En01">ABOUT</span>
+                            <span class="s-M -s-nav -ls-2 -f-En01">作者について</span>
                         </NuxtLink>
                     </li>
                     <li class="navItem_footer mgb2">

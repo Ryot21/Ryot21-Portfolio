@@ -152,90 +152,41 @@
 		}
 		.c-contentsBox{
 			position: absolute;
-			&.-f-title{
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				width: 60%;
-				@include max(768){
-					width: auto;
-					// タイトル > 中央
-					&.-f-title_c{
-						&::after{
-							position: absolute;
-							top: 120%;
-							left: 50%;
-							transform: translate(-50%,-50%);
-							width: 100%;
-							font-size: 14px;
-							text-align: center;
-						}
-					}
-					// タイトル > 右下
-					&.-f-title_r{
-						top: 82%;
-    					left: 83%;
-						&::after{
-							position: absolute;
-							top: 120%;
-							left: 50%;
-							transform: translate(-50%,-50%);
-							width: 100%;
-							font-size: 14px;
-							text-align: center;
-						}
-					}
-					//　タイトル >  コンセプトページ
-					&.-concept{&::after{content: "コンセプト";}}
-					&.-layout{&::after{content: "レイアウト";}}
-					&.-plan{&::after{content: "プラン";}}
-					&.-equipment{&::after{content: "設備・仕様";}}
-					&.-location{&::after{content: "周辺環境";}}
 
-				}
-				@include min(768){// tb
-					top: 50%;
-					left: 75%;
-					width: 38%;
-				}
-				@include min(1400){
-					top: 49%;
-					left: 76%;
-					width: 40% !important;
-				}
-			}
 			&.-f-logo{
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
 				width: 35%;
-				opacity: .2;
+				opacity: .05;
 				z-index: 1;
-				@include min(768){width: 15%;}
+				@include min(768){width: 12%;}
 			}
 			&.-f-circle{
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
 				width: 36%;
-				opacity: .1;
+				opacity: .05;
 				z-index: -1;
-				@include min(768){width: 16%;}
+				@include min(768){width: 13%;}
+			}
+			&.-f-title{
+				top: 46%;
+				left: 32%;
+				width: auto;
+				@include min(768){// tb
+					top: 42%;
+					left: 45.5%;
+				}
 			}
 			&.-f-des{
-				bottom: 0;
-				left: 85%;
-				transform: translateX(-50%);
-				white-space: nowrap;
-				// width: auto;
+				top: 51%;
+				left: 14.5%;
+				width: auto;
 				@include min(768){
-					left: 60%;
-					transform: scale(.8);
-				}
-				&.-w{
-					@include min(768){
-						left: 75%;
-					}
+					left: 37.5%;
+					white-space: nowrap;
 				}
 			}
 

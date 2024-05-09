@@ -32,46 +32,42 @@
 /* ---------------------------------
     ファーストビュー > 画像縮小
 --------------------------------- */
-.a-fviewOutImg{
+.a-zoomInImg{
     overflow: hidden;
     transition: 4s all;
     img{
-        animation-name: ZoomOut;
+        animation-name: ZoomIn;
         animation-fill-mode:forwards;
-        animation-duration:1s;
-        transform: scale(1.01);
     }
 }
-@keyframes ZoomOut{
+@keyframes ZoomIn{
     0% {
-        transform: scale(1.1);
+        transform: scale(1.0);
         opacity: .95;
     }
     100% {
-        transform: scale(1.01);
+        transform: scale(1.05);
         opacity: 1;
     }
 }
 /* ---------------------------------
     ファーストビュー > 画像拡大
 --------------------------------- */
-.a-fviewInImg{
+.a-zoomOutImg{
     overflow: hidden;
     transition: 4s all;
     img{
-        animation-name: ZoomIn;
+        animation-name: ZoomOut;
         animation-fill-mode:forwards;
-        animation-duration:1s;
-        transform: scale(1.01);
     }
 }
-@keyframes ZoomIn{
+@keyframes ZoomOut{
     0% {
-        transform: scale(.95);
+        transform: scale(.1);
         opacity: 1;
     }
     100% {
-        transform: scale(1);
+        transform: scale(.95);
         opacity: .95;
     }
 }

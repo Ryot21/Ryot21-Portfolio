@@ -11,7 +11,7 @@ html{
 }
 body,
 ul,li{
-    margin: 0;
+  margin: 0;
 	padding: 0;
 	list-style: none;
 }
@@ -34,6 +34,7 @@ img{
 
 h1,h2,h3,h4,h5,h6,p,a {
 	// font-familyなど
+	margin: 0;
 }
 a{
 	// display: block;

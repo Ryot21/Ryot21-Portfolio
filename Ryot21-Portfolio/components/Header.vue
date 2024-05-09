@@ -1,28 +1,30 @@
 <template>
 		<!-- header / TOPと各ページの構造が異なる -->
-		<header id="header" class="tb-pc c-header -fixed pdt1">
+		<header id="header" class="c-header -fixed a-scroll-header">
         <div class="c-header-wrapper pdb1"><!-- バナー表示エリア -->
-            <div class="c-header__popArea">
+            <div class="c-header__popArea ">
                 <ul class="c-header__lists c-flex -h-c">
                     <li class="logoArea">
-											<div class="imgBox"><img class="" src="~/assets/images/logo/site-logo01.png"></div>
-                    </li>
-                    <li class="navArea c-mainNav -borderVer">
+											<NuxtLink to="/" class="">
+												<div class="imgBox"><img class="" src="~/assets/images/logo/site-logo01.png"></div>
+											</NuxtLink>
+											</li>
+                    <li class="tb-pc navArea c-mainNav -borderVer">
 											<ul class="c-mainNav__lists -col4">
 												<li class="navItem">
 														<NuxtLink to="/" class="navItem__link -lh-1">
-															<span class="navItem-title -main -s-nav s-L -ls-3 -f-En01">TOP</span>
+															<span class="navItem-title -main -s-nav s-L -ls-3 -f-En02">TOP</span>
 														</NuxtLink>
 												</li>
 												<li class="navItem">
 														<NuxtLink to="/about" class="navItem__link -lh-1">
-															<span class="navItem-title -main -s-nav s-L -ls-3 -f-En01">ABOUT</span>
+															<span class="navItem-title -main -s-nav s-L -ls-3 -f-En02">ABOUT</span>
 														</NuxtLink>
 												</li>
 												<li class="navItem d-menu">
 														<input id="d-menu__checkbox" class="d-menu__cheakbox" type="checkbox"/>
 														<label class="d-menu__title -lh-1 navItem__link" for="d-menu__checkbox">
-															<span class="navItem-title -main -s-nav s-L -ls-3 -f-En01">WORKS</span>
+															<span class="navItem-title -main -s-nav s-L -ls-3 -f-En02">WORKS</span>
 														</label>
 														<ul class="d-menu__lists">
 																<li class="d-menu__item -top">
@@ -35,7 +37,7 @@
 												</li>
 												<li class="navItem">
 														<NuxtLink to="/contact" class="navItem__link -lh-1">
-															<span class="navItem-title -main -s-nav s-L -ls-3 -f-En01">CONTACT</span>
+															<span class="navItem-title -main -s-nav s-L -ls-3 -f-En02">CONTACT</span>
 														</NuxtLink>
 												</li>
 											</ul>
@@ -47,6 +49,10 @@
     </header>
     <!-- //header -->
 </template>
+
+<script setup>
+
+</script>
 
 <style lang="scss">
 	.navItem{

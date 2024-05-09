@@ -100,6 +100,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
 
     // 太さ
     &.-b{font-weight: $f-b;}
+    &.-b_n{font-weight: $f-n;}
 
     // フォントファミリー(ローカルフォント)
     &.-f-mincho01{font-family: mincho-font01;}// しっぽり

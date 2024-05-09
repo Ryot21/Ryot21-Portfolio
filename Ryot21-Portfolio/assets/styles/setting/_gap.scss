@@ -121,6 +121,12 @@
 ------------------------ */
 // 768px以上
 .mgt-2 {@include min(768){margin-top:-2px !important;}}
+.mgt10 {@include min(768){margin-top:10% !important;}}
+// ファーストビュー専用
+.mgt-view {
+	@include min(768){margin-top:00% !important;}
+	// @include min(1400){margin-top: 140px !important;}
+}
 
 
 

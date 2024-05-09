@@ -1,20 +1,21 @@
 // ナビゲーション（ハンバーガー）
 .c-hnav{
-	position: sticky;
-	top: 3%;
+	position: fixed;
+	top: 2%;
   left: 86%;
 	width: 33px;
-	height: 0;
-	// opacity: .7;
-	z-index: 998;
+	height: 33px;
+	overflow: hidden;
+	z-index: 1000;
 	@include min(768){
-		top: 1.5%;
+		position: sticky;
+		top: 2.5%;
 		left: 94%;
-		opacity: .7;
 	}
-	@include min(1200){
-		left: 95.5%;
-	}
+	@include min(1200){left: 95.5%;}
+	// &__inner{
+	// 	opacity: 0;
+	// }
 	&__cheakbox{
 		display: none;
 		&:checked ~ .c-hnav__close{
@@ -88,8 +89,8 @@
 		right: 0;
 
 		/* ハンバーガーメニュー内の幅 */
-		width: 55%;
-		max-width: 230px;
+		width: 30%;
+		max-width: 120px;
 		height: 100%;
 		padding: 5% 5% 0 5%;
 		background: $main-color--w;
@@ -99,8 +100,8 @@
 		transform: translateX(100%);
 		z-index: 9999;
 		@include min(768){
-			width: 29%;
-			max-width: 230px;
+			width: 15%;
+			max-width: 180px;
 			padding: 2% 2.5% 2% 2.5%;
 			background: $main-color--w;
 		}
@@ -109,7 +110,7 @@
 			max-width: 330px;
 		}
 		li{
-			margin-bottom: 7px;
+			margin-bottom: 10px;
 			transition: .5s all;
 			@include min(768){margin-bottom: 10px;}
 			@include min(1400){margin-bottom: 10px;}
@@ -133,7 +134,7 @@
 						transform: translateY(-50%);
 						width: 12px;
 						height: 12px;
-						background-image: url(../images/logo/page-title-icon.png);
+						// background-image: url(../images/logo/page-title-icon.png);
 						background-size: contain;
 						background-repeat: no-repeat;
 						@include min(768){

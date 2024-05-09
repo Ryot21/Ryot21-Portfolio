@@ -13,6 +13,7 @@
 
 <template>
   <Header />
+  <PartsHamburgerNavi />
   <div>
     <NuxtPage /><!-- pagesディレクトリ配下の「.vueファイル」をルーティング -->
   </div>
