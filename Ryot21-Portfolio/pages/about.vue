@@ -2,5 +2,23 @@
 <template>
 	<div>
 		<PageView />
+		<div class="c-contents">
+			<div class="c-contents__inner w1100">
+				<div class="c-profile mgb5 mgb10s">
+					<ruby class="s-S -ls-2 -left">前田 リョウタ</ruby>
+					<h2 class="c-profile__title s-3L -b -ls-2 -left">RYOTA MAEDA<span class="s-S">WEBエンジニア</span></h2>
+				</div>
+				<p class="c-profile__des s-M -left -lh-2 -ls-2 mgb10 mgb20s">
+						1991年生まれの4児の父。<br>
+						<br>
+						2013年4月に都内の化学メーカーに入社後、営業として7年間勤めた経験を持つ。
+						複数人のチームを作り、全く新しい商品を製造した経験から、仕事は自分一人だけでできるモノではなく「仲間」の大切さを知るキッカケとなった。<br>
+						<br>
+						その後、長年の興味であったWEB分野への転身を決意し、プログラミングスクールに通いながら新たなキャリアをスタートさせました。2020年3月にプログラミングスクール卒業後、都内のWEB制作会社に勤務。数年間の勤務を経て2024年6月まで関東に拠点を置く不動産会社でWEBエンジニアとして活躍。2024年7月から都内の某コンサル企業にて、WEBエンジニア兼WEBマーケターとして勤務予定。<br>
+						<br>
+						以上の経験から、ビジネスのニーズに応じた効果的なWEB戦略の提案や、ユーザーに響くデザインを生み出す能力を身につけました。これまでの経験を活かし、クライアントのビジネスが一層輝くよう支援していくことが私の仕事です。
+				</p>
+			</div>
+		</div>
 	</div>
 </template>

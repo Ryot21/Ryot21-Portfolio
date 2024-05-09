@@ -1,0 +1,27 @@
+.c-profile{
+	position: relative;
+	&__title{
+		span{
+			position: absolute;
+			top: 65%;
+			right: 0;
+			transform: translateY(-50%);
+			@include min(768){
+				top: 50%;
+			}
+			&::before{
+				content: "";
+				position: absolute;
+				top: 55%;
+				left: -10%;
+				transform: translateY(-50%);
+				width: 1px;
+				height: 100%;
+				background: $main-color--b;
+			}
+		}
+	}
+	&__des{
+
+	}
+}
