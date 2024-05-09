@@ -175,6 +175,7 @@
 				top: 46%;
 				left: 32%;
 				width: auto;
+				overflow: hidden;
 				@include min(768){// tb
 					top: 42%;
 					left: 45.5%;
@@ -184,6 +185,7 @@
 				top: 51%;
 				left: 14.5%;
 				width: auto;
+				overflow: hidden;
 				@include min(768){
 					left: 37.5%;
 					white-space: nowrap;
