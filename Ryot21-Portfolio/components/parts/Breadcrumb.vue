@@ -1,7 +1,6 @@
 
 <template>
-	<ul class="c-breadcrumb__lists">
-			<!-- Breadcrumb NavXT 7.2.0 -->
+	<ul class="c-breadcrumb__lists mgb5 mgb5s">
 			<li class="c-breadcrumb__item">
 					<NuxtLink class="c-breadcrumb__link" to="/">トップ</NuxtLink>
 			</li>

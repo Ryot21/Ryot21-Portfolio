@@ -1,0 +1,63 @@
+
+// 制作実績 > 詳細情報
+.c-detailArea{ // ul
+
+	@include min(768){
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+	}
+
+	&__right{
+		@include min(768){
+			width: 45%;
+			min-width: 330px;
+		}
+	}
+	&__left{
+		@include min(768){
+			width: 50%;
+		}
+	}
+
+	&__title{
+
+	}
+	&__subTitle{
+		span{
+			position: relative;
+			&::before{
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				height: 1px;
+				width: 100%;
+				background: $main-color--b;
+			}
+		}
+	}
+	&__day{
+
+	}
+	&__img{
+		overflow: hidden;
+		margin-bottom: 1%;
+		&:last-child{
+			margin-bottom: 0;
+			@include max(768){display: none;}
+		}
+	}
+	&__text{
+
+	}
+	&__link{
+		color: $site-color02;
+		transition: all .5s;
+		opacity: 1;
+		&:hover{
+			opacity: .8;
+		}
+	}
+}

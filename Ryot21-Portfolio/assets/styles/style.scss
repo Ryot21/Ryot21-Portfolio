@@ -12,25 +12,27 @@
 @import "./introduction/luminous-basic.min"; // ポップアップ+スライダー機能付き
 
 // サイト内（基本パーツ）
-@import "./components/common";  // 共通
-@import "./components/header";  // ヘッダー
-@import "./components/footer";  // フッター
-@import "./components/nav";     // ナビゲーション
-@import "./components/contents";// コンテンツ
-@import "./components/title";   // コンテンツ > タイトル
-@import "./components/contact"; // お問い合わせ
-@import "./components/flex";    // 横並び要素
-@import "./components/banner";  // バナー
-@import "./components/tab";     // タブ
-@import "./components/modal";   // モーダル
-@import "./components/btn";     // ボタン
-@import "./components/link";    // リンク
-@import "./components/slider";  // カルーセル
-@import "./components/popup";   // ポップアップ
-@import "./components/video";   // 動画
-@import "./components/tab";     // タブコンテンツ
-@import "./components/dropmenu";// ドロップメニュー
-@import "./components/profile"; // プロフィール
+@import "./components/common";     // 共通
+@import "./components/header";     // ヘッダー
+@import "./components/footer";     // フッター
+@import "./components/nav";        // ナビゲーション
+@import "./components/contents";   // コンテンツ
+@import "./components/title";      // コンテンツ > タイトル
+@import "./components/contact";    // お問い合わせ
+@import "./components/flex";       // 横並び要素
+@import "./components/banner";     // バナー
+@import "./components/tab";        // タブ
+@import "./components/modal";      // モーダル
+@import "./components/btn";        // ボタン
+@import "./components/link";       // リンク
+@import "./components/slider";     // カルーセル
+@import "./components/popup";      // ポップアップ
+@import "./components/video";      // 動画
+@import "./components/tab";        // タブコンテンツ
+@import "./components/dropmenu";   // ドロップメニュー
+@import "./components/profile";    // プロフィール
+@import "./components/breadcrumb"; // パンくず
+@import "./components/detail";     // 詳細
 
 // 各ページ
 @import "./page/top";

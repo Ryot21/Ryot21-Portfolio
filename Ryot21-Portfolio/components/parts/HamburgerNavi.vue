@@ -10,7 +10,8 @@
 				<ul class="">
 					<li class=""><NuxtLink class="s-SS -ws-n -left"  to="/"     ><span class="s-ML -f-En02 -ls-2 pdr5 pdr4s">TOP</span></NuxtLink></li>
 					<li class=""><NuxtLink class="s-SS -ws-n -left"  to="/about"><span class="s-ML -f-En02 -ls-2 pdr5 pdr4s">ABOUT</span></NuxtLink></li>
-					<li class=""><NuxtLink class="s-SS -ws-n -left"  to="/works"><span class="s-ML -f-En02 -ls-2 pdr5 pdr4s">WORKS</span></NuxtLink></li>
+					<li class=""><NuxtLink class="s-SS -ws-n -left"  to="/works/"><span class="s-ML -f-En02 -ls-2 pdr5 pdr4s">WEBSITE</span></NuxtLink></li>
+					<li class=""><NuxtLink class="s-SS -ws-n -left"  to="/works/ses"><span class="s-ML -f-En02 -ls-2 pdr5 pdr4s">AGENT</span></NuxtLink></li>
 					<li class="mgb15 mgb15s"><NuxtLink class="s-SS -ws-n -left"  to="/contact"><span class="s-ML -f-En02 -ls-2 pdr5 pdr4s">CONTACT</span></NuxtLink></li>
 				</ul>
 							<!--　ハンバーガー > ロゴ関係 -->

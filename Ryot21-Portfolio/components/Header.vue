@@ -6,7 +6,7 @@
                 <ul class="c-header__lists c-flex -h-c">
                     <li class="logoArea">
 											<NuxtLink to="/" class="">
-												<div class="imgBox"><img class="" src="~/assets/images/logo/site-logo01.png"></div>
+												<h1 class="imgBox"><img class="" src="~/assets/images/logo/site-logo01.png"></h1>
 											</NuxtLink>
 											</li>
                     <li class="tb-pc navArea c-mainNav -borderVer">
@@ -28,10 +28,10 @@
 														</label>
 														<ul class="d-menu__lists">
 																<li class="d-menu__item -top">
-																		<NuxtLink to="/works/products" class="d-menu__subTitle s-SS">サイト制作</NuxtLink>
+																		<NuxtLink to="/works/" class="d-menu__subTitle s-SS">制作実績</NuxtLink>
 																</li>
 																<li class="d-menu__item -btm">
-																		<NuxtLink to="/works/ses" class="d-menu__subTitle s-SS" >SES事業</NuxtLink>
+																		<NuxtLink to="/works/ses" class="d-menu__subTitle s-SS">エージェント</NuxtLink>
 																</li>
 														</ul>
 												</li>
