@@ -1,7 +1,13 @@
 <!-- works > 制作物 > 詳細ページ -->
 <template>
-	<div>
-		<h1>Product/{{ $route.params.id }}を表示中</h1>
+	<div class="c-contents mgt-contents">
+		<div class="c-contents__inner w1100">
+			<PartsBreadcrumb />
+
+
+
+			<h1>Product/{{ $route.params.id }}を表示中</h1>
+		</div>
 	</div>
 </template>
 
