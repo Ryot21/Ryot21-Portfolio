@@ -46,7 +46,7 @@
 		// ボーダーなし
 		&.-no-b{
 			&::after{
-				background: $main-color--w;
+				background: inherit;
 			}
 		}
 	}
