@@ -3,6 +3,7 @@
 	import type { Product } from "~~/types/Product";
 	const { data } = await useMicroCMSGetList<Product>({
 		endpoint: "products",
+		// queries: { fields: 'id' }
 	});
 
 	console.log(data);
@@ -26,7 +27,7 @@
 				<div class="c-contents mgb20 mgb20s">
 					<ul class="c-flex -col2_3">
 						<li v-for="product in data?.contents" :key="product.id" class="a-fadeUp -sc-auto mgb5 mgb5s">
-							<NuxtLink :to="`/${product.id}`" class="">
+							<NuxtLink :to="`/works/products/${product.id}`" class="">
 								<div class="c-portfolio a-zoomImg">
 									<div class="imgBox mgb3 mgb3s"><img :src="product.thumbnail?.url"></div>
 									<p class="s-ML -b -left mgb3 mgb3s">{{ product.name }}</p>
