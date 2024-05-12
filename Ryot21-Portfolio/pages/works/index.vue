@@ -1,4 +1,13 @@
 <!-- works > 制作物 > アーカイブページ -->
+<script setup lang="ts">
+	import type { Product } from "~~/types/Product";
+	const { data } = await useMicroCMSGetList<Product>({
+		endpoint: "products",
+	});
+
+	console.log(data);
+</script>
+
 <template>
 	<div>
 		<div class="c-contents mgt-contents">
@@ -16,60 +25,16 @@
 				<!-- 今まで制作したWEBサイトのご紹介 -->
 				<div class="c-contents mgb20 mgb20s">
 					<ul class="c-flex -col2_3">
-						<li class="a-fadeUp -sc-auto mgb5 mgb5s">
-							<NuxtLink to="products/1" class="">
+						<li v-for="product in data?.contents" :key="product.id" class="a-fadeUp -sc-auto mgb5 mgb5s">
+							<NuxtLink :to="`/${product.id}`" class="">
 								<div class="c-portfolio a-zoomImg">
-									<div class="imgBox mgb3 mgb3s"><img src="https://via.placeholder.com/480x320/?text=480x320"></div>
-									<p class="s-ML -b -left mgb3 mgb3s">タイトルタイトル</p>
+									<div class="imgBox mgb3 mgb3s"><img :src="product.thumbnail?.url"></div>
+									<p class="s-ML -b -left mgb3 mgb3s">{{ product.name }}</p>
 									<p class="s-SS -detail">詳しく見る</p>
 								</div>
 							</NuxtLink>
 						</li>
-						<li class="a-fadeUp -sc1 mgb5 mgb5s">
-							<NuxtLink to="products/2" class="">
-								<div class="c-portfolio a-zoomImg">
-									<div class="imgBox mgb3 mgb3s"><img src="https://via.placeholder.com/480x320/?text=480x320"></div>
-									<p class="s-ML -b -left mgb3 mgb3s">タイトルタイトル</p>
-									<p class="s-SS -detail">詳しく見る</p>
-								</div>
-							</NuxtLink>
-						</li>
-						<li class="a-fadeUp -sc2 mgb5 mgb5s">
-							<NuxtLink to="products/3" class="">
-								<div class="c-portfolio a-zoomImg">
-									<div class="imgBox mgb3 mgb3s"><img src="https://via.placeholder.com/480x320/?text=480x320"></div>
-									<p class="s-ML -b -left mgb3 mgb3s">タイトルタイトル</p>
-									<p class="s-SS -detail">詳しく見る</p>
-								</div>
-							</NuxtLink>
-						</li>
-						<li class="a-fadeUp -sc-auto mgb5 mgb5s">
-							<NuxtLink to="products/4" class="">
-								<div class="c-portfolio a-zoomImg">
-									<div class="imgBox mgb3 mgb3s"><img src="https://via.placeholder.com/480x320/?text=480x320"></div>
-									<p class="s-ML -b -left mgb3 mgb3s">タイトルタイトル</p>
-									<p class="s-SS -detail">詳しく見る</p>
-								</div>
-							</NuxtLink>
-						</li>
-						<li class="a-fadeUp -sc1 mgb5 mgb5s">
-							<NuxtLink to="products/5" class="">
-								<div class="c-portfolio a-zoomImg">
-									<div class="imgBox mgb3 mgb3s"><img src="https://via.placeholder.com/480x320/?text=480x320"></div>
-									<p class="s-ML -b -left mgb3 mgb3s">タイトルタイトル</p>
-									<p class="s-SS -detail">詳しく見る</p>
-								</div>
-							</NuxtLink>
-						</li>
-						<li class="a-fadeUp -sc2 mgb5 mgb5s">
-							<NuxtLink to="products/6" class="">
-								<div class="c-portfolio a-zoomImg">
-									<div class="imgBox mgb3 mgb3s"><img src="https://via.placeholder.com/480x320/?text=480x320"></div>
-									<p class="s-ML -b -left mgb3 mgb3s">タイトルタイトル</p>
-									<p class="s-SS -detail">詳しく見る</p>
-								</div>
-							</NuxtLink>
-						</li>
+
 					</ul>
 				</div>
 			</div>

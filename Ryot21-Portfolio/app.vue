@@ -9,6 +9,7 @@
     }
   )
   //const { data: users } = await useFetch('')// 非同期データ取得
+  
 </script>
 
 <template>
