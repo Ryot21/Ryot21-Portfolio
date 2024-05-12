@@ -6,7 +6,7 @@
 			<div class="c-contents__inner w1100">
 				<div class="c-profile mgb5 mgb10s">
 					<ruby class="s-S -ls-2 -left">前田 リョウタ</ruby>
-					<h2 class="c-profile__title s-3L -b -ls-2 -left">RYOTA MAEDA<span class="s-S">WEBエンジニア</span></h2>
+					<h2 class="c-profile__title s-3L -b -ls-2 -left">RYOTA MAEDA<span class="s-S">フロントエンジニア</span></h2>
 				</div>
 				<p class="c-profile__des s-M -left -lh-2 -ls-2 mgb10 mgb20s">
 						1991年生まれの4児の父。<br>
@@ -21,4 +21,4 @@
 			</div>
 		</div>
 	</div>
-</template>
+</template> 

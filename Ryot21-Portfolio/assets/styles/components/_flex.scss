@@ -34,9 +34,6 @@
                 @include min(768){width: 3%;}
                 @include min(1400){width: 4%;}
             }
-            &:nth-child(2){
-
-            }
         }
     }
     // コンテンツ_カラム（sp:pc 1:2）
