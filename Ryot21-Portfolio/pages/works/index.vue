@@ -1,9 +1,9 @@
 <!-- works > 制作物 > アーカイブページ -->
 <script setup lang="ts">
 	import type { Product } from "~~/types/Product";
+	const { params } = useRoute();
 	const { data } = await useMicroCMSGetList<Product>({
 		endpoint: "products",
-		// queries: { fields: 'id' }
 	});
 
 	console.log(data);
@@ -30,7 +30,7 @@
 							<NuxtLink :to="`/works/products/${product.id}`" class="">
 								<div class="c-portfolio a-zoomImg">
 									<div class="imgBox mgb3 mgb3s"><img :src="product.thumbnail?.url"></div>
-									<p class="s-ML -b -left mgb3 mgb3s">{{ product.name }}</p>
+									<p class="s-ML -b -left mgb3 mgb3s">{{ product.title }}</p>
 									<p class="s-SS -detail">詳しく見る</p>
 								</div>
 							</NuxtLink>
