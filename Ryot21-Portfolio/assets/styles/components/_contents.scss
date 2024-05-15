@@ -154,7 +154,7 @@
 			position: absolute;
 
 			&.-f-logo{
-				top: 50%;
+				top: 48%;
 				left: 50%;
 				transform: translate(-50%, -50%);
 				width: 35%;
@@ -163,7 +163,7 @@
 				@include min(768){width: 12%;}
 			}
 			&.-f-circle{
-				top: 50%;
+				top: 48%;
 				left: 50%;
 				transform: translate(-50%, -50%);
 				width: 36%;
@@ -172,25 +172,32 @@
 				@include min(768){width: 13%;}
 			}
 			&.-f-title{
-				top: 46%;
+				top: 43%;
 				left: 50%;
 				transform: translateX(-50%);
 				width: auto;
 				overflow: hidden;
 				@include min(768){// tb
-					top: 44%;
+					top: 40%;
+				}
+				&.-error{
+					top: 43%;
+					@include min(768){top: 28%;}
 				}
 			}
 			&.-f-des{
-				top: 51%;
+				top: 49%;
 				left: 50%;
-				// left: 14.5%;
 				transform: translateX(-50%);
 				width: auto;
 				overflow: hidden;
 				@include min(768){
 					left: 50%;
 					white-space: nowrap;
+				}
+				&.-error{
+					top: 48%;
+					@include min(768){top: 40%;}
 				}
 			}
 

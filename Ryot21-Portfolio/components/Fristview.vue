@@ -1,9 +1,7 @@
 
 <template>
 	<div class="c-contents -f-view mgt-view">
-		<div class="imgBox -cv">
-			<!-- <img src="~assets/images/f-view/top/top-view_bg.png" alt="透明な背景"> -->
-		</div>
+		<div class="imgBox -cv"></div>
 		<div class="c-contentsBox -f-circle"><!-- ロゴ / サークル -->
 			<div class="">
 				<svg viewBox="0 0 100 100">

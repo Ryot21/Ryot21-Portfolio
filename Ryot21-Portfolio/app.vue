@@ -1,5 +1,5 @@
 
-<script setup>
+<script setup lang="ts">
   useHead(
     {
       title: "Ryot21-Portfolio | WEBエンジニア",
