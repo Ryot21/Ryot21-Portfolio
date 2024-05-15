@@ -13,18 +13,18 @@
 											<ul class="c-mainNav__lists -col4">
 												<li class="navItem">
 														<NuxtLink to="/" class="navItem__link -lh-1">
-															<span class="navItem-title -main -s-nav s-L -ls-3 -f-En02">TOP</span>
+															<span class="navItem-title -main -s-nav s-ML -b -ls-1">TOP</span>
 														</NuxtLink>
 												</li>
 												<li class="navItem">
 														<NuxtLink to="/about" class="navItem__link -lh-1">
-															<span class="navItem-title -main -s-nav s-L -ls-3 -f-En02">ABOUT</span>
+															<span class="navItem-title -main -s-nav s-ML -b -ls-1">ABOUT</span>
 														</NuxtLink>
 												</li>
 												<li class="navItem d-menu">
 														<input id="d-menu__checkbox" class="d-menu__cheakbox" type="checkbox"/>
 														<label class="d-menu__title -lh-1 navItem__link" for="d-menu__checkbox">
-															<span class="navItem-title -main -s-nav s-L -ls-3 -f-En02">WORKS</span>
+															<span class="navItem-title -main -s-nav s-ML -b -ls-1">WORKS</span>
 														</label>
 														<ul class="d-menu__lists">
 																<li class="d-menu__item -top">
@@ -37,7 +37,7 @@
 												</li>
 												<li class="navItem">
 														<NuxtLink to="/contact" class="navItem__link -lh-1">
-															<span class="navItem-title -main -s-nav s-L -ls-3 -f-En02">CONTACT</span>
+															<span class="navItem-title -main -s-nav s-ML -b -ls-1">CONTACT</span>
 														</NuxtLink>
 												</li>
 											</ul>

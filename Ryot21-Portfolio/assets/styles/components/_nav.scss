@@ -89,7 +89,7 @@
 		right: 0;
 
 		/* ハンバーガーメニュー内の幅 */
-		width: 30%;
+		width: 32%;
 		max-width: 120px;
 		height: 100%;
 		padding: 5% 5% 0 5%;
@@ -110,7 +110,7 @@
 			max-width: 330px;
 		}
 		li{
-			margin-bottom: 10px;
+			margin-bottom: 15px;
 			transition: .5s all;
 			@include min(768){margin-bottom: 10px;}
 			@include min(1400){margin-bottom: 10px;}

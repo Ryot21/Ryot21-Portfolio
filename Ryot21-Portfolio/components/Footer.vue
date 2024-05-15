@@ -1,6 +1,6 @@
 <template>
     <footer id="footer" class="c-footer mgt-2">
-        <div class="c-footer-wrapper mgb1 mgb10s">
+        <!-- <div class="c-footer-wrapper mgb1 mgb10s">
             <div class="c-footer__contactArea">
                 <ul class="c-footer__contactLists">
                     <li class="contactItem">
@@ -33,10 +33,10 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> -->
         <div class="c-footer-wrapper -v02 mgb2 mgb10s">
             <nav class="c-footer__navArea">
-                <ul class="c-footer__navLists -col4">
+                <ul class="c-footer__navLists -col5">
                     <!-- アクティブ箇所に「.-active」を付与して下さい。 -->
                     <li class="navItem_footer mgb2">
                         <NuxtLink to="/" class=" -lh-1 -center">
@@ -56,6 +56,11 @@
                     <li class="navItem_footer mgb2">
                         <NuxtLink to="/works/ses" class="-lh-1 -center">
                             <span class="s-M -s-nav -ls-2 -f-En01">エージェント</span>
+                        </NuxtLink>
+                    </li>
+                    <li class="navItem_footer mgb2">
+                        <NuxtLink to="/contact" class="-lh-1 -center">
+                            <span class="s-M -s-nav -ls-2 -f-En01">お問い合わせ</span>
                         </NuxtLink>
                     </li>
                 </ul>
