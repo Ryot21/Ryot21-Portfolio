@@ -1,9 +1,10 @@
 
 // 制作実績 > 詳細情報
 .c-detailArea{ // ul
-
+	display: flex;
+	flex-wrap: wrap;
+	@include max(768){flex-direction: column-reverse !important;}
 	@include min(768){
-		display: flex;
 		flex-wrap: nowrap;
 		justify-content: space-between;
 	}
@@ -41,10 +42,33 @@
 	&__day{
 
 	}
+	&__categoryLists{
+		display: flex;
+		flex-wrap: nowrap;
+		@include min(768){
+			flex-wrap: wrap;
+			// padding-left: 2%
+		}
+		li{
+			@include min(768){
+				width: 100%;
+			}
+		}
+	}
 	&__img{
+		opacity: 0;
+		animation-name:fadeUpAnime;
+		perspective-origin: left center;
+		animation-fill-mode: forwards;
+		animation-duration:1s;
+		filter: drop-shadow(1px 1px 2px $main-color--b);
 		overflow: hidden;
-		margin-bottom: 1%;
+		margin-bottom: 5%;
+		@include min(768){margin-bottom: 5%;}
+		&:nth-child(1){animation-delay:.25s;}
+		&:nth-child(2){animation-delay:.5s;}
 		&:last-child{
+			animation-delay: .75s;
 			margin-bottom: 0;
 			@include max(768){display: none;}
 		}
