@@ -18,10 +18,10 @@
 			<img src="~assets/images/logo/site-logo01.png" alt="">
 		</div>
 		<div class="c-contentsBox -f-title">
-			<div class="a-fadeUp -tm05 -sp2"><h2 class="s-LL -center -f-En02 -ls-3">RYOTA MAEDA</h2></div>
+			<div class="a-fade -tm05 -sp2"><h2 class="s-LL -center -f-En0 -lh-2 -b -ls-3">RYOTA MAEDA</h2></div>
 		</div>
 		<div class="c-contentsBox -f-des">
-			<div class="a-fadeUp -tm1 -sp2"><p class="s-L -center -f-En02 -ls-2 -ws-n">THIS SITE IS A PORTFOLIO SITE FOR <br class="sp">WEB ENGINEERS.</p></div>
+			<div class="a-fade -tm1 -sp2"><p class="s-ML -center -f-En0 -lh-1_5_s -ls-2 -ws-n">This Site is a Portfolio Site <br class="sp">for Web Engineers.</p></div>
 		</div>
 	</div>
 </template>
