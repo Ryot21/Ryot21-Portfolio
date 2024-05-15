@@ -16,13 +16,7 @@
 		}
 	})
 </script>
-<!-- <script setup>
-	definePageMeta({// 数字以外のパラメーターは「404エラー」を表示。
-		validate: async(route) => {
-			return /^\d+$/.test(route.params.id)
-		}
-	})
-</script> -->
+
 
 <template>
 	<div v-if="data" class="c-contents mgt-contents">
@@ -47,14 +41,14 @@
 					<h2  class="c-detailArea__title s-LL mgb2 mgb2s">{{ data.title }}</h2>
 
 					<!-- リリース日 -->
-					<p   class="c-detailArea__day s-S mgb5 mgb5s">リリース日 : {{ data.date }}</p>
+					<p   class="c-detailArea__day s-S mgb5 mgb10s">リリース日 : {{ data.date }}</p>
 
 					<!-- カテゴリー -->
-					<h3   class="c-detailArea__subTitle -left mgb2 mgb2s"><span class="s-M -b">カテゴリー</span></h3>
+					<h3   class="c-detailArea__subTitle -left mgb2 mgb2s"><span class="s-ML -b">カテゴリー</span></h3>
 					<p v-for="categoryItem in data?.category" :key="categoryItem" class="s-S mgb5 mgb5s">{{ categoryItem }}</p>
 
 					<!-- 使用言語 -->
-					<h3   class="c-detailArea__subTitle -left mgb2 mgb2s"><span class="s-M -b">使用言語</span></h3>
+					<h3   class="c-detailArea__subTitle -left mgb2 mgb2s"><span class="s-ML -b">使用言語</span></h3>
 					<ul class="c-detailArea__categoryLists mgb5 mgb5s">
 						<li v-for="languageList in data?.language" :key="languageList" class="mgb1">
 							<p class="s-S">- {{ languageList }}</p>
@@ -62,12 +56,12 @@
 					</ul>
 
 					<!-- 説明 -->
-					<h3   class="c-detailArea__subTitle -left mgb2 mgb2s"><span class="s-M -b">説明</span></h3>
+					<h3   class="c-detailArea__subTitle -left mgb2 mgb2s"><span class="s-ML -b">説明</span></h3>
 					<p   class="c-detailArea__text s-S -lh-2 -left mgb5 mgb5s">{{ data.description }}</p>
 
 					<!-- URL -->
-					<h3   class="c-detailArea__subTitle -left mgb2 mgb2s"><span class="s-M -b">URL</span></h3>
-					<a   class="c-detailArea__link s-S -lh-2 -left" href="">{{ data.url }}</a>
+					<h3   class="c-detailArea__subTitle -left mgb2 mgb2s"><span class="s-ML -b">URL</span></h3>
+					<p   class="c-detailArea__link s-S -lh-2 -left">{{ data.url }}</p>
 				</li>
 			</ul>
 		</div>
