@@ -9,6 +9,12 @@
     }
   )
   //const { data: users } = await useFetch('')// 非同期データ取得
+  const { params } = useRoute();
+  definePageMeta({// 数字以外のパラメーターは「404エラー」を表示。
+		validate: async(route) => {
+			return /^\d+$/.test(route.params.id)
+		}
+	})
   
 </script>
 

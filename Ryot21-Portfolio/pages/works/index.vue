@@ -1,7 +1,7 @@
 <!-- works > 制作物 > アーカイブページ -->
 <script setup lang="ts">
 	import type { Product } from "~~/types/Product";
-	const { params } = useRoute();
+	// const { params } = useRoute();
 	const { data } = await useMicroCMSGetList<Product>({
 		endpoint: "products",
 	});
@@ -18,21 +18,22 @@
 					<h2 class="c-profile__title s-3L -b -ls-2 -left">WEBSITE<span class="s-S">WEBサイト制作</span></h2>
 				</div>
 				<p class="c-profile__des s-M -left -lh-2 -ls-2 mgb10 mgb20s">
+					本業でも個人でも、Webサイトを作る活動をしています。<br>
 					次にご紹介するのは、私がこれまで手掛けてきた様々なWEBサイトのプロジェクトです。<br>
 					クライアント様のニーズに細かく把握し、SEOを意識したユーザビリティの高いデザインのWEBサイトの制作を心がけております。<br>
 					以下で、私の代表的な作品をいくつかご紹介します。
 				</p>
-
+ 
 				<!-- 今まで制作したWEBサイトのご紹介 -->
 				<div class="c-contents mgb20 mgb20s">
 					<ul class="c-flex -col2_3">
-						<li v-for="product in data?.contents" :key="product.id" class="a-fadeUp -sc-auto mgb5 mgb5s">
-							<NuxtLink :to="`/works/products/${product.id}`" class="">
-								<div class="c-portfolio a-zoomImg">
+						<li v-for="product in data?.contents" :key="product.id" class="mgb5 mgb5s">
+							<NuxtLink :to="`/works/product/${product.id}`" class="">
+								<div class="c-archive__img a-zoomImg">
 									<div class="imgBox mgb3 mgb3s"><img :src="product.thumbnail?.url"></div>
-									<p class="s-ML -b -left mgb3 mgb3s">{{ product.title }}</p>
-									<p class="s-SS -detail">詳しく見る</p>
 								</div>
+								<p class="s-ML -s14 -b -left mgb3 mgb3s">{{ product.title }}</p>
+								<p class="s-SS -detail">詳しく見る</p>
 							</NuxtLink>
 						</li>
 

@@ -32,7 +32,10 @@
 @import "./components/dropmenu";   // ドロップメニュー
 @import "./components/profile";    // プロフィール
 @import "./components/breadcrumb"; // パンくず
+@import "./components/archive";    // 一覧
 @import "./components/detail";     // 詳細
+@import "./components/blog";       // media > blog
+@import "./components/tag";        // タグ
 
 // 各ページ
 @import "./page/top";
