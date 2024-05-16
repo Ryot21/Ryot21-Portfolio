@@ -24,7 +24,7 @@
 			<PartsBreadcrumb />
 			<div class="c-blogArea">
 					<!-- 画像 -->
-					<div v-for="imgList in data?.images" class="c-blogArea__img a-fadeUp -sp1">
+					<div v-for="imgList in data?.images" class="c-blogArea__img mgb8 mgb10s a-fadeUp -sp1">
 						<div class="imgBox">
 							<img :src="imgList.url" alt="ブログ画像">
 						</div>
@@ -45,7 +45,7 @@
 					<p class="c-blogArea__day s-S -right mgb5 mgb10s">{{ data.date }}</p>
 
 					<!-- 本文 -->
-					<p class="c-blogArea__text s-ML -lh-2 mgb5 mgb5s">{{ data.text }}</p>
+					<p class="c-blogArea__text s-ML -s12 -lh-2 mgb5 mgb5s">{{ data.text }}</p>
 
 					<!-- 書籍(未実装) -->
 					<!-- <div v-if="data.book">

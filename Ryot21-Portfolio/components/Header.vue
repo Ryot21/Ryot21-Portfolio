@@ -1,6 +1,6 @@
 <template>
 		<!-- header / TOPと各ページの構造が異なる -->
-		<header id="header" class="tb-pc c-header -fixed a-scroll-header">
+		<header id="header" class="c-header -fixed a-scroll-header">
         <div class="c-header-wrapper -no-b pdb1"><!-- バナー表示エリア -->
             <div class="c-header__popArea ">
                 <ul class="c-header__lists c-flex -h-c">

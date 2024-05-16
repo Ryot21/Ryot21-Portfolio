@@ -160,6 +160,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button,ruby{
         &.s-ML{
             font-size: 1.6rem;
             @include min(768){font-size: clamp(1.6rem, 2vw, 2rem);}
+            &.-s12{@include max(768){font-size: 1.2rem;}}
             &.-s14{@include max(768){font-size: 1.4rem;}}
         }
         &.s-L{

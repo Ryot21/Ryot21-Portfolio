@@ -44,23 +44,23 @@
 
 					<!-- カテゴリー -->
 					<h3   class="c-detailArea__subTitle -left mgb2 mgb2s"><span class="s-ML -b">カテゴリー</span></h3>
-					<p v-for="categoryItem in data?.category" :key="categoryItem" class="s-S mgb5 mgb5s">{{ categoryItem }}</p>
+					<p v-for="categoryItem in data?.category" :key="categoryItem" class="s-S -s12 mgb5 mgb5s">{{ categoryItem }}</p>
 
 					<!-- 使用言語 -->
 					<h3   class="c-detailArea__subTitle -left mgb2 mgb2s"><span class="s-ML -b">使用言語</span></h3>
 					<ul class="c-detailArea__categoryLists mgb5 mgb5s">
 						<li v-for="languageList in data?.language" :key="languageList" class="mgb1">
-							<p class="s-S">- {{ languageList }}</p>
+							<p class="s-S -s12">- {{ languageList }}</p>
 						</li>
 					</ul>
 
 					<!-- 説明 -->
 					<h3   class="c-detailArea__subTitle -left mgb2 mgb2s"><span class="s-ML -b">説明</span></h3>
-					<p   class="c-detailArea__text s-S -lh-2 -left mgb5 mgb5s">{{ data.description }}</p>
+					<p   class="c-detailArea__text s-S -s12 -lh-2 -left mgb5 mgb5s">{{ data.description }}</p>
 
 					<!-- URL -->
 					<h3   class="c-detailArea__subTitle -left mgb2 mgb2s"><span class="s-ML -b">URL</span></h3>
-					<p   class="c-detailArea__link s-S -lh-2 -left">{{ data.url }}</p>
+					<p   class="c-detailArea__link s-S -s12 -lh-2 -left">{{ data.url }}</p>
 				</li>
 			</ul>
 		</div>
