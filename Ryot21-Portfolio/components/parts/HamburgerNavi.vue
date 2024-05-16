@@ -1,6 +1,6 @@
 <template>
 		<!-- ハンバーガーメニュー -->
-		<nav class="c-hnav a-scroll-on">
+		<nav class="sp c-hnav a-scroll-on">
 			<input id="c-hnav__checkbox" class="c-hnav__cheakbox" type="checkbox"/>
 			<label class="c-hnav__button" for="c-hnav__checkbox">
 							<span></span>
@@ -8,9 +8,9 @@
 			<label id="" class="c-hnav__cheakbox c-hnav__close" for="c-hnav__checkbox"></label>
 			<div class="c-hnav__content">
 				<ul class="">
-					<li class=""><NuxtLink class="s-SS -ws-n -left"  to="/"     ><span class="s-ML -s14 -b -ls-2 pdr5 pdr4s">TOP</span></NuxtLink></li>
 					<li class=""><NuxtLink class="s-SS -ws-n -left"  to="/about"><span class="s-ML -s14 -b -ls-2 pdr5 pdr4s">ABOUT</span></NuxtLink></li>
-					<li class=""><NuxtLink class="s-SS -ws-n -left"  to="/works/"><span class="s-ML -s14 -b -ls-2 pdr5 pdr4s">WEBSITE</span></NuxtLink></li>
+					<li class=""><NuxtLink class="s-SS -ws-n -left"  to="/media"><span class="s-ML -s14 -b -ls-2 pdr5 pdr4s">BLOG</span></NuxtLink></li>
+					<li class=""><NuxtLink class="s-SS -ws-n -left"  to="/works"><span class="s-ML -s14 -b -ls-2 pdr5 pdr4s">WORKS</span></NuxtLink></li>
 					<li class=""><NuxtLink class="s-SS -ws-n -left"  to="/works/ses"><span class="s-ML -s14 -b -ls-2 pdr5 pdr4s">SES</span></NuxtLink></li>
 					<li class="mgb15 mgb15s"><NuxtLink class="s-SS -ws-n -left"  to="/contact"><span class="s-ML -s14 -b -ls-2 pdr5 pdr4s">CONTACT</span></NuxtLink></li>
 				</ul>

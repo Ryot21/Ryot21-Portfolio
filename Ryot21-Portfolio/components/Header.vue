@@ -1,6 +1,6 @@
 <template>
 		<!-- header / TOPと各ページの構造が異なる -->
-		<header id="header" class="c-header -fixed a-scroll-header">
+		<header id="header" class="tb-pc c-header -fixed a-scroll-header">
         <div class="c-header-wrapper -no-b pdb1"><!-- バナー表示エリア -->
             <div class="c-header__popArea ">
                 <ul class="c-header__lists c-flex -h-c">
@@ -12,28 +12,24 @@
                     <li class="tb-pc navArea c-mainNav -borderVer">
 											<ul class="c-mainNav__lists -col4">
 												<li class="navItem">
-														<NuxtLink to="/" class="navItem__link -lh-1">
-															<span class="navItem-title -main -s-nav s-ML -b -ls-1">TOP</span>
-														</NuxtLink>
-												</li>
-												<li class="navItem">
 														<NuxtLink to="/about" class="navItem__link -lh-1">
 															<span class="navItem-title -main -s-nav s-ML -b -ls-1">ABOUT</span>
 														</NuxtLink>
 												</li>
-												<li class="navItem d-menu">
-														<input id="d-menu__checkbox" class="d-menu__cheakbox" type="checkbox"/>
-														<label class="d-menu__title -lh-1 navItem__link" for="d-menu__checkbox">
+												<li class="navItem">
+														<NuxtLink to="/media" class="navItem__link -lh-1">
+															<span class="navItem-title -main -s-nav s-ML -b -ls-1">BLOG</span>
+														</NuxtLink>
+												</li>
+												<li class="navItem">
+														<NuxtLink to="/works" class="navItem__link -lh-1">
 															<span class="navItem-title -main -s-nav s-ML -b -ls-1">WORKS</span>
-														</label>
-														<ul class="d-menu__lists">
-																<li class="d-menu__item -top">
-																		<NuxtLink to="/works/" class="d-menu__subTitle s-SS">制作実績</NuxtLink>
-																</li>
-																<li class="d-menu__item -btm">
-																		<NuxtLink to="/works/ses" class="d-menu__subTitle s-SS">エージェント</NuxtLink>
-																</li>
-														</ul>
+														</NuxtLink>
+												</li>
+												<li class="navItem">
+														<NuxtLink to="/works/ses" class="navItem__link -lh-1">
+															<span class="navItem-title -main -s-nav s-ML -b -ls-1">SES</span>
+														</NuxtLink>
 												</li>
 												<li class="navItem">
 														<NuxtLink to="/contact" class="navItem__link -lh-1">

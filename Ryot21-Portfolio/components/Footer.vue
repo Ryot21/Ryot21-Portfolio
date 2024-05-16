@@ -36,7 +36,7 @@
         </div> -->
         <div class="c-footer-wrapper -v02 mgb2 mgb10s">
             <nav class="c-footer__navArea">
-                <ul class="c-footer__navLists -col5">
+                <ul class="c-footer__navLists -col6">
                     <!-- アクティブ箇所に「.-active」を付与して下さい。 -->
                     <li class="navItem_footer mgb2">
                         <NuxtLink to="/" class=" -lh-1 -center">
@@ -49,7 +49,12 @@
                         </NuxtLink>
                     </li>
                     <li class="navItem_footer mgb2">
-                        <NuxtLink to="/works/" class="-lh-1 -center">
+                        <NuxtLink to="/media" class="-lh-1 -center">
+                            <span class="s-M -s-nav -ls-2 -f-En01">ブログ</span>
+                        </NuxtLink>
+                    </li>
+                    <li class="navItem_footer mgb2">
+                        <NuxtLink to="/works" class="-lh-1 -center">
                             <span class="s-M -s-nav -ls-2 -f-En01">制作実績</span>
                         </NuxtLink>
                     </li>
