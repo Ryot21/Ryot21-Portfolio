@@ -28,13 +28,13 @@
 				<!-- 今まで制作したWEBサイトのご紹介 -->
 				<div class="c-contents mgb20 mgb20s">
 					<ul class="c-flex -col2_3">
-						<li v-for="blog in data?.contents" :key="blog.id" class="a-fadeUp -sc-auto mgb5 mgb5s">
+						<li v-for="blog in data?.contents" :key="blog.id" class="mgb5 mgb5s">
 							<NuxtLink :to="`/media/blog/${blog.id}`" class="">
-								<div class="c-portfolio a-zoomImg">
+								<div class="c-archive__img c-blogArea__img a-zoomImg">
 									<div class="imgBox mgb3 mgb3s"><img :src="blog.thumbnail?.url"></div>
-									<p class="s-ML -b -left mgb3 mgb3s">{{ blog.title }}</p>
-									<p class="s-SS -detail">詳しく見る</p>
 								</div>
+								<p class="s-ML -s14 -b -left mgb3 mgb3s">{{ blog.title }}</p>
+								<p class="s-SS -detail">詳しく見る</p>
 							</NuxtLink>
 						</li>
 

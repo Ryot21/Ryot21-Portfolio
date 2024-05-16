@@ -8,7 +8,6 @@
 		contentId: Array.isArray(params.id) ? params.id[0] : params.id,
 	});
 	console.log(data);
-	// console.log(params);
 
 	definePageMeta({// 数字以外のパラメーターは「404エラー」を表示。
 		validate: async(route) => {
@@ -29,7 +28,7 @@
 						<!-- 1枚目 -->
 						<li v-for="imgList in data?.images.web_post_images" :key="imgList" class="c-detailArea__img a-zoomImg">
 							<div class="imgBox">
-								<NuxtImg :src="imgList.url" alt="WEBサイトのメインビジュアル" />
+								<NuxtImg :src="imgList.url" alt="制作したサイトの実際の画像" />
 							</div>
 						</li>
 					</ul>

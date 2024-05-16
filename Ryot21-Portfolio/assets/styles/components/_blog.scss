@@ -14,30 +14,12 @@
 		flex-wrap: wrap;
 		li{width: auto;}
 	}
+
+	// チェキ
 	&__img{
-		padding: 1% 1%;
+		padding: 1% 2%;
 		background: $main-color--w;
 		border: 1px solid $main-color--b;
-
-		opacity: 0;
-		animation-name:fadeUpAnime;
-		perspective-origin: left center;
-		animation-fill-mode: forwards;
-		animation-duration:1s;
-		filter: drop-shadow(1px 1px 2px $main-color--b);
-		overflow: hidden;
-		margin-bottom: 5%;
-
-		@include min(768){
-			padding: 2% 2%;
-			margin-bottom: 5%;
-		}
-		&:nth-child(1){animation-delay:.25s;}
-		&:nth-child(2){animation-delay:.5s;}
-		&:last-child{
-			animation-delay: .75s;
-			margin-bottom: 0;
-			@include max(768){display: none;}
-		}
+		@include min(768){padding: 2% 2% 3%;}
 	}
 }
