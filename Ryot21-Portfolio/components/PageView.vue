@@ -1,15 +1,20 @@
 <template>
-	<div class="c-contents -f-view w1100 mgt-view mgb3 mgb5s a-fadeUp -sp1">
-		<div class="imgBox a-fade-blur">
-			<img class="sp" src="https://via.placeholder.com/750x500/?text=SP 750x500">
-			<img class="tb-pc" src="https://via.placeholder.com/1920x960/?text=TB-PC 1920x960">
+	<div class="c-contents -f-pageView w1100 mgt-view mgb3 mgb5s a-fadeUp -sp1">
+		<div class="imgBox a-imgMono">
+			<img src="~assets/images/f-view/about/20240518_about.jpg" />
 		</div>
 	</div>
 	<!-- <div class="testBox"></div> -->
 </template>
 
 <style lang="scss">
-
+	.-f-pageView{
+		padding: 2% 2% 3%;
+		background: #ffffff;
+    border: 1px solid #545353;
+		// img{filter: grayscale(70%);}
+		// filter: drop-shadow(1px 1px 2px #545353);
+	}
 	.testBox{
 		width: 100vw;
 		height: 150vh;

@@ -28,12 +28,12 @@
     &-imgMono{
         animation-name: monochrome;
         animation-fill-mode: forwards;
-        animation-duration: .3s;
-        transition: all .3s;
+        animation-duration: 1s;
+        transition: all 1s;
         &:hover{animation-name: vivid;}
     }
     @keyframes monochrome {
-        0%  {filter: grayscale(0%);}
+        0%  {filter: grayscale(50%);}
         100%{filter: grayscale(100%);}
     }
     /* ---------------------------------------
@@ -48,6 +48,6 @@
     }
     @keyframes vivid {
         0%  {filter: grayscale(100%);}
-        100%{filter: grayscale(0%);}
+        100%{filter: grayscale(50%);}
     }
 }
