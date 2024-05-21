@@ -21,7 +21,7 @@
 <template>
 	<div v-if="data" class="c-contents mgt-contents">
 		<div class="c-contents__inner w1100 mgb10 mgb20s">
-			<PartsBreadcrumb />
+			<!-- <PartsBreadcrumb /> -->
 			<div class="c-blogArea">
 					<!-- 画像 -->
 					<div v-for="imgList in data?.images" class="c-blogArea__img mgb8 mgb10s a-fadeUp -sp1">
@@ -34,7 +34,7 @@
 					<!-- カテゴリー -->
 					<ul class="c-blogArea__categoryLists">
 						<li v-for="categoryItem in data?.category" :key="categoryItem" class="c-tag">
-							<p class="s-S">{{ categoryItem }}</p>
+							<p class="s-S">#{{ categoryItem }}</p>
 						</li>
 					</ul>
 

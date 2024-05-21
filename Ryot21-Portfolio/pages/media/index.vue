@@ -31,7 +31,7 @@
 						<li v-for="blog in data?.contents" :key="blog.id" class="mgb5 mgb5s">
 							<NuxtLink :to="`/media/blog/${blog.id}`" class="">
 								<div class="c-archive__img c-blogArea__img a-zoomImg">
-									<div class="imgBox a-imgMono mgb3 mgb3s"><img :src="blog.thumbnail?.url"></div>
+									<div class="imgBox a-imgMono mgb3 mgb3s"><img :src="blog.thumbnail.url"></div>
 								</div>
 								<p class="s-ML -s14 -b -left mgb3 mgb3s">{{ blog.title }}</p>
 								<p class="s-SS -detail">詳しく見る</p>
