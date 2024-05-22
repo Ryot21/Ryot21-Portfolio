@@ -6,8 +6,11 @@
 		perspective-origin: left center;
 		animation-fill-mode: forwards;
 		animation-duration:1s;
-		filter: drop-shadow(1px 1px 2px $main-color--b);
+		border: 1px solid $main-color--gray;
+		// filter: drop-shadow(1px 1px 2px $main-color--b);
 		overflow: hidden;
+		background: $main-color--w;
+		padding: 3% 3% 1%;
 		margin-bottom: 5%;
 		@include min(768){margin-bottom: 5%;}
 		&:nth-child(1){animation-delay:.1s;}
@@ -16,6 +19,9 @@
 			animation-delay: .75s;
 			margin-bottom: 0;
 			@include max(768){display: none;}
+		}
+		.imgBox{
+			border: 1px solid $main-color--gray;
 		}
 	}
 }
