@@ -32,8 +32,11 @@
 								<div class="c-archive__img a-zoomImg">
 									<div class="imgBox mgb3 mgb3s"><img :src="product.thumbnail?.url"></div>
 								</div>
-								<p class="s-ML -s14 -b -left mgb3 mgb3s">{{ product.title }}</p>
-								<p class="s-SS -detail">詳しく見る</p>
+								<p class="s-S -s12 -ls-1 -left">{{ product.date }}</p>
+								<p class="s-ML -s14 -b -left -ellipsis mgb3 mgb3s">{{ product.title }}</p>
+								<div class="c-detailBtn">
+									<p class="s-SS c-detailBtn--inner">詳しく見る</p>
+								</div>
 							</NuxtLink>
 						</li>
 
@@ -45,34 +48,38 @@
 </template>
 
 <style lang="scss">
-	.-detail{
-		position: relative;
-		display: inline-block;
+	.c-detailBtn{
+		text-align: end;
 
-		&::before{
-			content: "";
-			position: absolute;
-			bottom: -5%;
-			left: 58%;
-			transform: translateX(-50%);
-			width: 118%;
-			height: 1px;
-			background: #545353;
-		}
-		&::after{
-			content: "";
-			display: block;
-			position: absolute;
-			bottom: 0;
-			left: 118%;
+		&--inner{
+			position: relative;
+			display: inline-block;
+			width: auto;
+			&::before{
+				content: "";
+				position: absolute;
+				bottom: -5%;
+				left: 58%;
+				transform: translateX(-50%);
+				width: 118%;
+				height: 1px;
+				background: #545353;
+			}
+			&::after{
+				content: "";
+				display: block;
+				position: absolute;
+				bottom: 0;
+				left: 118%;
 
-			width: 8px;
-			height: 1px;
-			background-color: #545353;
+				width: 8px;
+				height: 1px;
+				background-color: #545353;
 
-    transform: rotate(-130deg);
-    transform-origin: left bottom;
+			transform: rotate(-130deg);
+			transform-origin: left bottom;
 
+			}
 		}
 	}
 </style>

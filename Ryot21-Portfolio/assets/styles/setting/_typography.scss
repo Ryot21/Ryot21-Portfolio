@@ -110,6 +110,13 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button,ruby{
         }
     }
 
+    // 省略
+    &.-ellipsis{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
     // 太さ
     &.-b{font-weight: $f-b;}
     &.-b_n{font-weight: $f-n;}
