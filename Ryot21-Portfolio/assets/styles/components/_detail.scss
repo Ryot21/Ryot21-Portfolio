@@ -55,27 +55,125 @@
 			}
 		}
 	}
-	&__img{
-		opacity: 0;
-		animation-name:fadeUpAnime;
-		perspective-origin: left center;
-		animation-fill-mode: forwards;
-		animation-duration:1s;
-		filter: drop-shadow(1px 1px 2px $main-color--b);
-		overflow: hidden;
-		margin-bottom: 10%;
-		&:nth-child(1){
-			margin-bottom: 2.5%;
-			animation-delay:.25s;
+	&__imgLists{// ui
+
+	}
+	&__imgItem{// li
+		position: relative;
+		margin-bottom: 20%;
+		@include min(768){margin-bottom: 10%;}
+
+		// 画像のスクロール化に対応して、ユーザーにテキストで周知する。
+		&:first-child{// PCブラウザ表示
+			&::before{// ボーダー
+				@include min(768){
+					content: "";
+					position: absolute;
+					top: 20%;
+					left: 0;
+					transform: translateX(-50%);
+					height: 1px;
+					width: 5%;
+					background: $main-color--b;
+					z-index: 1;
+
+				}
+			}
+			&::after{
+				content: "スクロールできるよ（PCバージョン）";
+				position: absolute;
+				top: -6.5%;
+				left: 0%;
+				width: auto;
+				font-size: clamp(1rem, 1.2vw, 1.5rem);// s-S
+				font-family: gothic-font02;
+				font-weight: bold;
+				@include min(768){
+					top: 13%;
+					left: -6%;
+					transform: translateX(-50%);
+					-ms-writing-mode: tb-rl;
+					writing-mode: vertical-rl;
+				}
+			}
+			.c-detailArea__img{ // li > 
+				// 各ページ毎の設定（1枚目）
+
+				// 表示アニメーション
+				opacity: 0;
+				animation-name:fadeUpAnime;
+				perspective-origin: left center;
+				animation-fill-mode: forwards;
+				animation-duration:1s;
+				animation-delay:.25s;	
+
+				// サイト紹介は縦幅が長くなりがちなので、「スクロール化」で対応。
+				height: 30%;
+				max-height: 300px;
+				overflow-y: scroll;
+				@include min(768){
+					height: 75%;
+					max-height: 400px;
+				}
+				@include min(1400){max-height: 500px;}
+			}
 		}
-		&:nth-child(2){
-			margin-bottom: 2.5%;
-			animation-delay:.5s;
-		}
-		&:last-child{
-			animation-delay: .75s;
-			margin-bottom: 10%;
-			@include max(768){display: none;}
+		&:nth-child(2){// スマホ表示
+			width: 75%;
+			&::before{// ボーダー
+				@include min(768){
+					content: "";
+					position: absolute;
+					top: 20%;
+					left: auto;
+					right: -6.5%;
+					transform: translateX(-50%);
+					height: 1px;
+					width: 6.5%;
+					background: $main-color--b;
+					z-index: 1;
+				}
+			}
+			&::after{
+				content: "スクロールできるよ（スマホバージョン）";
+				position: absolute;
+				top: -4.5%;
+				left: 0%;
+				width: auto;
+				font-size: clamp(1rem, 1.2vw, 1.5rem);// s-S
+				font-family: gothic-font02;
+				font-weight: bold;
+				@include min(768){
+					top: 13%;
+					left: auto;
+					right: -14%;
+					transform: translateX(-50%);
+					-ms-writing-mode: tb-rl;
+					writing-mode: vertical-rl;
+				}
+			}
+			.c-detailArea__img{ // li > 
+				// 各ページ毎の設定（2枚目）
+
+				// 表示アニメーション
+				opacity: 0;
+				animation-name:fadeUpAnime;
+				perspective-origin: left center;
+				animation-fill-mode: forwards;
+				animation-duration:1s;
+				animation-delay:.5s;
+	
+				// サイト紹介は縦幅が長くなりがちなので、「スクロール化」で対応。
+				height: 30%;
+				max-height: 480px;
+				overflow-y: scroll;
+				@include min(768){
+					height: 25%;
+					max-height: 580px;
+				}
+				@include min(1400){max-height: 700px;}
+			}
+
 		}
 	}
 	&__text{

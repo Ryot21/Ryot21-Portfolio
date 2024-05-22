@@ -26,15 +26,17 @@
 					<ul class="c-detailArea__imgLists">
 						<!-- <p>{{ data }}</p> -->
 						<!-- 1枚目 -->
-						<li v-for="imgList in data?.images.web_post_images" :key="imgList" class="c-detailArea__img a-zoomImg">
-							<div class="imgBox">
-								<NuxtImg :src="imgList.url" alt="制作したサイトの実際の画像" />
+						<li v-for="imgList in data?.images.web_post_images" :key="imgList" class="c-detailArea__imgItem">
+							<div class="c-detailArea__img">
+								<div class="imgBox">
+									<NuxtImg :src="imgList.url" alt="制作したサイトの実際の画像" />
+								</div>
 							</div>
 						</li>
 					</ul>
 
 				</li>
-				<li class="c-detailArea__right mgb5s">
+				<li class="c-detailArea__right mgb20s">
 
 					<!-- タイトル -->
 					<h2  class="c-detailArea__title s-LL mgb2 mgb2s">{{ data.title }}</h2>
