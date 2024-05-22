@@ -33,9 +33,9 @@
 									<div class="imgBox mgb3 mgb3s"><img :src="product.thumbnail?.url"></div>
 								</div>
 								<p class="s-S -s12 -ls-1 -left">{{ product.date }}</p>
-								<p class="s-ML -s14 -b -left -ellipsis mgb3 mgb3s">{{ product.title }}</p>
+								<p class="s-ML -s14 -b -left -ellipsis mgb3 mgb5s">{{ product.title }}</p>
 								<div class="c-detailBtn">
-									<p class="s-SS c-detailBtn--inner">詳しく見る</p>
+									<p class="s-SS c-detailBtn--inner pdr2 pdr5s">詳しく見る</p>
 								</div>
 							</NuxtLink>
 						</li>
@@ -59,9 +59,9 @@
 				content: "";
 				position: absolute;
 				bottom: -5%;
-				left: 58%;
+				left: 50%;
 				transform: translateX(-50%);
-				width: 118%;
+				width: 100%;
 				height: 1px;
 				background: #545353;
 			}
@@ -70,7 +70,7 @@
 				display: block;
 				position: absolute;
 				bottom: 0;
-				left: 118%;
+				left: 100%;
 
 				width: 8px;
 				height: 1px;
