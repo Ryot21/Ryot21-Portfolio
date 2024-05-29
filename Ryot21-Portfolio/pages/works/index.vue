@@ -23,24 +23,30 @@
 					クライアント様のニーズに細かく把握し、SEOを意識したユーザビリティの高いデザインのWEBサイトの制作を心がけております。<br>
 					以下で、私の代表的な作品をいくつかご紹介します。
 				</p>
- 
+
 				<!-- 今まで制作したWEBサイトのご紹介 -->
 				<div class="c-contents mgb20 mgb20s">
 					<ul class="c-flex -col2_3">
-						<li v-for="product in data?.contents" :key="product.id" class="mgb5 mgb5s">
+						<li v-for="product in data?.contents" :key="product.id" class="flexItem mgb5 mgb5s">
 							<NuxtLink :to="`/works/product/${product.id}`" class="">
 								<div class="c-archive__img a-zoomImg">
 									<div class="imgBox mgb3 mgb3s"><img :src="product.thumbnail?.url"></div>
 								</div>
 								<p class="s-S -s12 -ls-1 -left">{{ product.date }}</p>
 								<p class="s-ML -s14 -b -left -ellipsis mgb3 mgb5s">{{ product.title }}</p>
+								<!-- タグ -->
+								<ul class="c-archive__tagLists mgb5 mgb5s">
+									<li v-for="label in product.type?.name" :key="label" class="tagItem mgb1">
+										<p class="s-SS">- {{ label }}</p>
+									</li>
+								</ul>
 								<div class="c-detailBtn">
 									<p class="s-SS c-detailBtn--inner pdr2 pdr5s">詳しく見る</p>
 								</div>
 							</NuxtLink>
 						</li>
-
 					</ul>
+					<!-- <PartsPagination /> -->
 				</div>
 			</div>
 		</div>

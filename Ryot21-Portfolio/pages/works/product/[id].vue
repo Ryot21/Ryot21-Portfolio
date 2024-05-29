@@ -44,15 +44,11 @@
 					<!-- リリース日 -->
 					<p   class="c-detailArea__day s-S mgb5 mgb10s">リリース日 : {{ data.date }}</p>
 
-					<!-- カテゴリー -->
-					<h3   class="c-detailArea__subTitle -left mgb2 mgb2s"><span class="s-ML -b">カテゴリー</span></h3>
-					<p v-for="categoryItem in data?.category" :key="categoryItem" class="s-S -s12 mgb5 mgb5s">{{ categoryItem }}</p>
-
-					<!-- 使用言語 -->
+					<!-- タグ -->
 					<h3   class="c-detailArea__subTitle -left mgb2 mgb2s"><span class="s-ML -b">使用言語</span></h3>
 					<ul class="c-detailArea__categoryLists mgb5 mgb5s">
-						<li v-for="languageList in data?.language" :key="languageList" class="mgb1">
-							<p class="s-S -s12">- {{ languageList }}</p>
+						<li v-for="label in data?.type.name" :key="label" class="mgb1">
+							<p class="s-S -s12">- {{ label }}</p>
 						</li>
 					</ul>
 

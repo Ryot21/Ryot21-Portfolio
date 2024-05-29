@@ -28,7 +28,7 @@
 				<!-- 今まで制作したWEBサイトのご紹介 -->
 				<div class="c-contents mgb20 mgb20s">
 					<ul class="c-flex -col2_3">
-						<li v-for="blog in data?.contents" :key="blog.id" class="mgb5 mgb5s">
+						<li v-for="blog in data?.contents" :key="blog.id" class="flexItem mgb5 mgb5s">
 							<NuxtLink :to="`/media/blog/${blog.id}`" class="">
 								<div class="c-archive__img c-blogArea__img a-zoomImg">
 									<div class="imgBox a-imgMono mgb3 mgb3s"><img :src="blog.thumbnail.url"></div>

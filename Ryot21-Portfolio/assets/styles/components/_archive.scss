@@ -24,4 +24,18 @@
 			border: 1px solid $main-color--gray;
 		}
 	}
+	&__tagLists{// ul
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		.tagItem{// li
+			display: inline-block;
+			width: auto;
+			margin-right: 1% !important;
+			padding:0 2% 1%;
+			border: 1px solid $main-color--Dgray;
+			z-index: 1;
+		}
+
+	}
 }
