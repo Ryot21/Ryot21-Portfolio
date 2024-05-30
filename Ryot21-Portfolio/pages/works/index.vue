@@ -4,6 +4,7 @@
 	// const { params } = useRoute();
 	const { data } = await useMicroCMSGetList<Product>({
 		endpoint: "products",
+		queries: { limit: 9 }
 	});
 
 	console.log(data);
@@ -46,7 +47,6 @@
 							</NuxtLink>
 						</li>
 					</ul>
-					<!-- <PartsPagination /> -->
 				</div>
 			</div>
 		</div>
