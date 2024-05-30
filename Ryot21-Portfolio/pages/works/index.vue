@@ -6,8 +6,6 @@
 		endpoint: "products",
 		queries: { limit: 9 }
 	});
-
-	console.log(data);
 </script>
 
 <template>

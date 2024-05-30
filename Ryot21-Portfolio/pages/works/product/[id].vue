@@ -7,7 +7,6 @@
 		endpoint: "products",
 		contentId: Array.isArray(params.id) ? params.id[0] : params.id,
 	});
-	console.log(data);
 
 	definePageMeta({// 数字以外のパラメーターは「404エラー」を表示。
 		validate: async(route) => {
