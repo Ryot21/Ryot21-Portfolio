@@ -1,11 +1,12 @@
 <!-- works > 制作物 > アーカイブページ -->
 <script setup lang="ts">
 	import type { Product } from "~~/types/Product";
-	// const { params } = useRoute();
+	const { params } = useRoute();
 	const { data } = await useMicroCMSGetList<Product>({
 		endpoint: "products",
 		queries: { limit: 9 }
 	});
+	console.log(data);
 </script>
 
 <template>
@@ -35,9 +36,12 @@
 								<p class="s-ML -s14 -b -left -ellipsis mgb3 mgb5s">{{ product.title }}</p>
 								<!-- タグ -->
 								<ul class="c-archive__tagLists mgb5 mgb5s">
-									<li v-for="label in product.type?.name" :key="label" class="tagItem mgb1">
-										<p class="s-SS">- {{ label }}</p>
+									<li v-for="label in product.tag" :key="label" class="tagItem mgb1">
+										<p class="s-SS">- {{ label.name }}</p>
 									</li>
+									<!-- <li v-for="label in product.type?.name" :key="label" class="tagItem mgb1">
+										<p class="s-SS">- {{ label }}</p>
+									</li> -->
 								</ul>
 								<div class="c-detailBtn">
 									<p class="s-SS c-detailBtn--inner pdr2 pdr5s">詳しく見る</p>

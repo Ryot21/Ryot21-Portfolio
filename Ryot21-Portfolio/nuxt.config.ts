@@ -13,6 +13,7 @@ export default defineNuxtConfig({
       },
     },
   },
+  // ↓microCMSモジュール導入
   modules: ["nuxt-microcms-module", "@nuxt/image"],
   microCMS: {
     serviceDomain: process.env.MICROCMS_SERVICE_DOMAIN,

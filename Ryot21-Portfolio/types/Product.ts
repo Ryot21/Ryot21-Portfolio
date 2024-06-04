@@ -1,13 +1,16 @@
 import type { MicroCMSImage, MicroCMSListContent, MicroCMSContentId, MicroCMSDate } from "microcms-js-sdk"
-import type { Tag } from "./tag"
+
+export type Tag = {
+  name: string;
+}
 
 export type Product = {
   title?: string;
   clientName?: string;
   date?: Date;
-  type?: (MicroCMSListContent & Tag) | null;
+  tag?: Tag[];
   description?: string;
   url?: string;
   thumbnail?: MicroCMSImage;
   images?: MicroCMSImage;
-};
+} & MicroCMSListContent;

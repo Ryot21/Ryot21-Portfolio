@@ -1,7 +1,7 @@
 <!-- blogs > 詳細ページ -->
 <script setup lang="ts">
 
-	import type { Blog } from "~~/types/Blog";
+	import type { Blog } from "~~/types/blog";
 	const { params } = useRoute();
 	const { data } = await useMicroCMSGetListDetail<Blog>({
 		endpoint: "blogs",
