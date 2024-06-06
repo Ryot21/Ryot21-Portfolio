@@ -39,4 +39,20 @@
 			}
 		}
 	}
+	&__left{// 戻るボタン
+		margin-right: 10px;
+		transition: all .5s;
+		&:hover{
+			color: $site-color03;
+			text-shadow: 1px 1px 0px $main-color--b;
+		}
+	}
+	&__right{// 進むボタン
+		margin-left: 10px;
+		transition: all .5s;
+		&:hover{
+			color: $site-color03;
+			text-shadow: 1px 1px 0px $main-color--b;
+		}
+	}
 }
