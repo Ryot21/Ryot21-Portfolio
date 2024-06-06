@@ -186,7 +186,7 @@
 						transform: translateX(-50%);
 						width: 10%;
 						height: 1px;
-						background: $main-color--w;
+						background: $main-color--gray;
 						transition: .5s all;
 					}
 				}
@@ -195,10 +195,10 @@
 				// ホバー関係
 				&:hover{
 					span{
-						color: $site-color01;
+						// color: $main-color--Dgray;
 						&::after{
 							width: 100%;
-							background: $site-color01;
+							background: $main-color--Dgray;
 						}
 					}
 				}

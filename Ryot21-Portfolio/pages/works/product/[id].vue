@@ -1,18 +1,13 @@
 <!-- works > 制作物 > 詳細ページ -->
 <script setup lang="ts">
 
-	import type { Product } from "~~/types/Product";
+	import type { Product } from "~/types/product";
 	const { params } = useRoute();
 	const { data } = await useMicroCMSGetListDetail<Product>({
 		endpoint: "products",
 		contentId: Array.isArray(params.id) ? params.id[0] : params.id,
 	});
 
-	definePageMeta({// 数字以外のパラメーターは「404エラー」を表示。
-		validate: async(route) => {
-			return /^\d+$/.test(route.params.id)
-		}
-	})
 </script>
 
 
@@ -47,7 +42,7 @@
 					<h3   class="c-detailArea__subTitle -left mgb2 mgb2s"><span class="s-ML -b">種類</span></h3>
 					<ul class="c-detailArea__categoryLists mgb5 mgb5s">
 						<li v-for="label in data?.tag" :key="label" class="mgb1">
-							<p class="s-S -s12">- {{ label.name }}</p>
+							<p class="s-S -s12">#{{ label.name }}</p>
 						</li>
 					</ul>
 
