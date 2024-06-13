@@ -1,39 +1,38 @@
 <!-- blogs > 詳細ページ -->
 <script setup lang="ts">
 
-	import type { Blog } from "~~/types/blog";
-	const { params } = useRoute();
-	const { data } = await useMicroCMSGetListDetail<Blog>({
-		endpoint: "blogs",
-		contentId: Array.isArray(params.id) ? params.id[0] : params.id,
-	});
-	console.log(data);
+		const route = useRoute();
+		const slug  = route.params.id;
 
-	definePageMeta({// 数字以外のパラメーターは「404エラー」を表示。
-		validate: async(route) => {
-			return /^\d+$/.test(route.params.id)
+		const { data: article } = await useFetch('/api/blogDetail', {
+			params: { slug: String(slug) },
+		})
+
+		if (!article.value) {
+			throw createError({
+				statusCode: 404, statusMessage: 'お探しのページが見つかりません'
+			})
 		}
-	})
 
 </script>
 
 
 <template>
-	<div v-if="data" class="c-contents mgt-contents">
+	<div v-if="article" class="c-contents mgt-contents">
 		<div class="c-contents__inner w1100 mgb10 mgb20s">
 			<!-- <PartsBreadcrumb /> -->
 			<div class="c-blogArea">
 					<!-- 画像 -->
-					<div v-for="imgList in data?.images" class="c-blogArea__img mgb8 mgb10s a-fadeUp -sp1">
-						<div class="imgBox">
-							<img :src="imgList.url" alt="ブログ画像">
+					<div v-for="image in article?.images" :key="image" class="c-blogArea__img mgb8 mgb10s a-fadeUp -sp1">
+						<div v-if="image" class="imgBox">
+							<img :src="image.url" alt="ブログ画像">
 						</div>
 					</div>
 					<!-- タイトル -->
-					<h2  class="c-blogArea__title s-LL -left mgb2 mgb2s">{{ data.title }}</h2>
+					<h2  class="c-blogArea__title s-LL -left mgb2 mgb2s">{{ article.title }}</h2>
 					<!-- カテゴリー -->
 					<ul class="c-blogArea__categoryLists">
-						<li v-for="categoryItem in data?.category" :key="categoryItem" class="c-tag">
+						<li v-for="categoryItem in article?.category" :key="categoryItem" class="c-tag">
 							<p class="s-S">#{{ categoryItem }}</p>
 						</li>
 					</ul>
@@ -42,10 +41,10 @@
 					<!-- <h2  class="c-blogArea__title s-M -left mgb1 mgb1s">{{ data.subTitle }}</h2> -->
 
 					<!-- リリース日 -->
-					<p class="c-blogArea__day s-S -right mgb5 mgb10s">{{ data.date }}</p>
+					<p class="c-blogArea__day s-S -right mgb5 mgb10s">{{ article.date }}</p>
 
 					<!-- 本文 -->
-					<p class="c-blogArea__text s-ML -s12 -lh-2 mgb5 mgb5s">{{ data.text }}</p>
+					<p class="c-blogArea__text s-ML -s12 -lh-2 mgb5 mgb5s">{{ article.text }}</p>
 
 					<!-- 書籍(未実装) -->
 					<!-- <div v-if="data.book">

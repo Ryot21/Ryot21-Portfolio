@@ -1,12 +1,18 @@
 <!-- ブログ > アーカイブページ -->
 <script setup lang="ts">
-	import type { Blog } from "~~/types/blog";
-	// const { params } = useRoute();
-	const { data } = await useMicroCMSGetList<Blog>({
-		endpoint: "blogs",
-	});
+	import type { MicroCMSQueries } from 'microcms-js-sdk';
+	import { BLOG_LIMIT_PAGE } from '~/server/setting/siteSettings'
+	
+	const route = useRoute()
+	const page = Number(route.params.id || 1)
 
-	console.log(data);
+	const limit = BLOG_LIMIT_PAGE;
+	const queries: MicroCMSQueries = {
+		limit: limit,
+		offset: (page - 1) * limit,
+	}
+
+	const { data: blogs } = await useFetch('/api/blogList', {params: queries})
 </script>
 
 <template>
@@ -28,9 +34,9 @@
 				<!-- 今まで制作したWEBサイトのご紹介 -->
 				<div class="c-contents mgb20 mgb20s">
 					<ul class="c-flex -col2_3">
-						<li v-for="blog in data?.contents" :key="blog.id" class="flexItem mgb5 mgb5s">
+						<li v-for="blog in blogs?.contents" :key="blog.id" class="flexItem mgb5 mgb5s">
 							<NuxtLink :to="`/media/blog/${blog.id}`" class="">
-								<div class="c-archive__img c-blogArea__img a-zoomImg">
+								<div v-if="blog.thumbnail" class="c-archive__img c-blogArea__img a-zoomImg">
 									<div class="imgBox a-imgMono mgb3 mgb3s"><img :src="blog.thumbnail.url"></div>
 								</div>
 								<p class="s-ML -s14 -b -left mgb3 mgb3s">{{ blog.title }}</p>
