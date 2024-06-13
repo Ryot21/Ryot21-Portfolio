@@ -1,22 +1,16 @@
+const { API_KEY, SERVICE_DOMAIN } = process.env;
+
 // defineNuxtConfigには各種CSSやモジュールなどがインポートできる。
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  // devtools: { enabled: true },
+  runtimeConfig: {
+    serviceDomain: SERVICE_DOMAIN,
+    apiKey: API_KEY,
+  },
   // 使用するscssファイルを指定
   css: ["@/assets/styles/style.scss"],
-  // Viteのビルドの際に、SCSSのパーシャルファイルを読み込むよう指定する
-  vite: {
-    css: {
-      preprocessorOptions: {
-        scss: {
-          // additionalData: '@import "@/assets/styles/";',
-        },
-      },
-    },
-  },
+
   // ↓microCMSモジュール導入
-  modules: ["nuxt-microcms-module", "@nuxt/image"],
-  microCMS: {
-    serviceDomain: process.env.MICROCMS_SERVICE_DOMAIN,
-    apiKey: process.env.MICROCMS_API_KEY,
-  },
+  modules: ["@nuxt/image"],
+
 })
