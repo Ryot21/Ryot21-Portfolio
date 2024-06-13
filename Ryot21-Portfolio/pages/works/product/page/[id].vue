@@ -2,6 +2,7 @@
 
 	const route = useRoute()
 	const page = Number(route.params.id || 1)
+
 </script>
 
 <template><!-- 制作実績_2ページ以降 -->
@@ -20,7 +21,8 @@
 					私が制作したWEBサイトをご紹介します。
 				</p>
 
-				<PartsPostList :page="page"/>
+				<!-- 一覧リスト表示 -->
+				<Archive :page="page"/>
 
 		</div>
 	</div>

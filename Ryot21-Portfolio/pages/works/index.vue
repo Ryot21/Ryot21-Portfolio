@@ -1,5 +1,6 @@
 <!-- works > 制作物 > アーカイブページ -->
 <script setup lang="ts">
+
 </script>
 
 <template>
@@ -16,9 +17,8 @@
 					クライアント様のニーズに細かく把握し、SEOを意識したユーザビリティの高いデザインのWEBサイトの制作を心がけております。
 					私が制作したWEBサイトをご紹介します。
 				</p>
-
 				<!-- 一覧リスト表示 -->
-				<PartsPostList :page="1"/>
+				<Archive :page="1"/>
 			</div>
 		</div>
 	</div>

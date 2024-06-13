@@ -18,7 +18,7 @@
 					以下で、私の代表的な作品をいくつかご紹介します。
 				</p>
 				<!-- 一覧リスト表示 -->
-				<PartsPostList :page="1"/>
+				<Archive :page="1"/>
 		</div>
 	</div>
 </template>
