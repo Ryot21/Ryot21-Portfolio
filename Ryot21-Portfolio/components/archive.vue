@@ -30,6 +30,7 @@
 </script>
 
 <template>
+	<div class="c-contents mgb20 mgb20s">
 
 		<!-- 投稿 -->
 		<PartsPostList :posts="products?.contents"/>
@@ -39,5 +40,7 @@
 
 		<!-- ページネーション -->
 		<PartsPagination :numPages="numPages" :current="page"/>
+		
+	</div>
 
 </template>

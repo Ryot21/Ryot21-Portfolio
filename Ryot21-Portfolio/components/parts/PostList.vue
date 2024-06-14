@@ -13,7 +13,6 @@
 
 <template>
 	<!-- 今まで制作したWEBサイトのご紹介 -->
-	<div class="c-contents mgb20 mgb20s">
 		<ul class="c-flex -col2_3 mgb5 mgb5s">
 			<li v-for="post in posts" :key="post.id" class="flexItem mgb5 mgb5s">
 				<NuxtLink :to="`/works/product/${post.id}`" class="">
@@ -38,6 +37,5 @@
 			</li>
 		</ul>
 
-	</div>
 
 </template>
