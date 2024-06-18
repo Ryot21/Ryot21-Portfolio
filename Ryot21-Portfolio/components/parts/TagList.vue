@@ -21,9 +21,9 @@
 
 <template>
 	<div class="c-tag mgb5 mgb5s">
-		<h2 class="s-ML -left mgb2 mgb2s">タグ一覧</h2>
+		<h2 class="s-L -left mgb2 mgb5s">タグ一覧</h2>
 		<ul class="c-tag__Lists">
-			<li v-for="tag in tags" :key="tag.id"  class="c-tag__Item mgb2 mgb5s">
+			<li v-for="tag in tags" :key="tag.id"  class="c-tag__Item mgb2 mgb4s">
 				<NuxtLink :to="`/tags/${tag.id}/page/1`" class="c-tag__Link s-S -ws-n" :class="getClass(tag.id)">
 					#{{ tag.name }}
 				</NuxtLink>
