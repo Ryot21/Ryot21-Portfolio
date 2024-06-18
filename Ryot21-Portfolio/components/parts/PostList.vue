@@ -8,7 +8,7 @@
 
 	const { posts } = defineProps<Props>()
 
-	console.log(posts[0].id)
+	// console.log(posts[0].id)
 </script>
 
 <template>
