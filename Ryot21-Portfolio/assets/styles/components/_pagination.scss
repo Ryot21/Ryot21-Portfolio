@@ -1,11 +1,13 @@
 .c-pagination{
-	width: 80%;
+	width: 100%;
 	max-width: 1000px;
 	margin: auto;
 	padding: 10px 0;
 	background: $main-color--w;
 	border-bottom: 1px solid $main-color--Dgray;
-	border-radius: 15px;
+	border-radius: 30px;
+	box-shadow: inset 1px 1px 7px $main-color--Dgray;
+	@include min(768){width: 80%;}
 	&__lists{// ul
 		display: flex;
 		flex-wrap: nowrap;

@@ -1,7 +1,8 @@
 <template>
 		<!-- header / TOPと各ページの構造が異なる -->
-		<header id="header" class="c-header -fixed a-scroll-header">
-        <div class="c-header-wrapper -no-b pdb1"><!-- バナー表示エリア -->
+		<!-- <header id="header" class="c-header -fixed a-scroll-header"> -->
+		<header id="header" class="c-header pdt2 pdb3 pdt2s pdb2s">
+        <div class="c-header-wrapper -no-b "><!-- バナー表示エリア -->
             <div class="c-header__popArea ">
                 <ul class="c-header__lists c-flex -h-c">
                     <li class="logoArea">
