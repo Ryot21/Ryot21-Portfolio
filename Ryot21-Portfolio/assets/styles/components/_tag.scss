@@ -1,9 +1,25 @@
 
 .c-tag{
-	width: auto;
-	padding: .25% .5% .5%;
-	border: 1px solid $main-color--b;
-	border-radius: 5px;
-	margin-right: 5px;
-	&:last-child{margin-right: auto;}
+	&__Lists{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: start;
+	}
+	&__Item{
+		width: auto;
+		padding-right: 20px;
+	}
+	&__Link{
+		padding: .5px 5px 3px;
+		border: 1px solid $main-color--b;
+		border-radius: 5px;
+		margin-right: 5px;
+		&.router-link-active,
+		&.active{
+			color: $main-color--w;
+			background: $site-color02;
+		}
+		@include min(768){ padding: .5px 5px 5px;}
+		&:last-child{margin-right: auto;}	
+	}
 }
