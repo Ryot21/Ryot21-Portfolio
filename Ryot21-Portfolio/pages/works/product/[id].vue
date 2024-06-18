@@ -52,8 +52,10 @@
 					</ul>
 
 					<!-- 説明 -->
-					<h3   class="c-detailArea__subTitle -left mgb2 mgb2s"><span class="s-ML -b">説明</span></h3>
-					<p   class="c-detailArea__text s-S -s12 -lh-2 -left mgb5 mgb5s">{{ article.description }}</p>
+					<div v-if="article.description">
+						<h3   class="c-detailArea__subTitle -left mgb2 mgb2s"><span class="s-ML -b">説明</span></h3>
+						<p   class="c-detailArea__text s-S -s12 -lh-2 -left mgb5 mgb5s">{{ article.description }}</p>
+					</div>
 
 					<!-- URL -->
 					<h3   class="c-detailArea__subTitle -left mgb2 mgb2s"><span class="s-ML -b">URL</span></h3>
