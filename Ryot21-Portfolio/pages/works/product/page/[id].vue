@@ -6,7 +6,7 @@
 </script>
 
 <template><!-- 制作実績_2ページ以降 -->
-		<div class="c-contents mgt-contents">
+	<div class="c-contents mgt-contents">
 		<div class="c-contents__inner w1100">
 				<!-- タイトルエリア -->
 				<div class="c-profile mgb5 mgb10s">

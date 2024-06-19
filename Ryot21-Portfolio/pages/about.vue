@@ -1,8 +1,8 @@
 <!-- Aboutページ -->
 <template>
 	<div>
-		<PageView />
-		<div class="c-contents">
+		<!-- <PageView /> -->
+		<div class="c-contents mgt-contents">
 			<div class="c-contents__inner w1100">
 				<div class="c-profile mgb5 mgb10s">
 					<ruby class="s-S -ls-2 -left">前田 リョウタ</ruby>

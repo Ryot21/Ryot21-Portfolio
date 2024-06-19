@@ -4,7 +4,6 @@
 </script>
 
 <template>
-	<div>
 		<div class="c-contents mgt-contents">
 			<div class="c-contents__inner w1100">
 				<div class="c-profile mgb5 mgb10s">
@@ -21,7 +20,6 @@
 				<Archive :page="1"/>
 			</div>
 		</div>
-	</div>
 </template>
 
 <style lang="scss">
