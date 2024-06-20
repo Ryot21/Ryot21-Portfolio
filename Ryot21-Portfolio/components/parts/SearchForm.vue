@@ -32,8 +32,7 @@ function submit() {
 	<div class="c-search__area mgb3 mgb5s">
 		<!-- 検索フォーム -->
 		<form class="c-search__form" @submit.prevent="submit">
-				<input id="search-input" type="text" v-model="query" ref="searchForm" placeholder="検索してみてね">
+            <input id="search-input" type="text" v-model="query" ref="searchForm" placeholder="検索してみてね">
 		</form>
-		<!-- <div v-if=""></div> -->
 	</div>
 </template>
