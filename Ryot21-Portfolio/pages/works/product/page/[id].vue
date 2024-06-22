@@ -14,7 +14,7 @@
 	<div class="c-contents mgt-contents">
 		<div class="c-contents__inner w1100">
 				<!-- ページ説明 -->
-				<WorkView :title="t" :sTE="sTE" :sTJ="sTJ" :des="des"/>
+				<PageView :title="t" :sTE="sTE" :sTJ="sTJ" :des="des"/>
 				<!-- 一覧リスト表示 -->
 				<Archive :page="page" :tagId="tagId"/>
 		</div>

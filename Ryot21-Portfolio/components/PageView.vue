@@ -1,23 +1,21 @@
-<template>
-	<div class="c-contents -f-pageView w1100 mgt-view mgb3 mgb5s a-fadeUp -sp1">
-		<div class="imgBox a-imgMono">
-			<img src="~assets/images/f-view/about/20240518_about.jpg" />
-		</div>
-	</div>
-	<!-- <div class="testBox"></div> -->
-</template>
+<script setup lang="ts">
 
-<style lang="scss">
-	.-f-pageView{
-		padding: 2% 2% 3%;
-		background: #ffffff;
-    border: 1px solid #545353;
-		// img{filter: grayscale(70%);}
-		// filter: drop-shadow(1px 1px 2px #545353);
+	type Props = {
+		title: String,
+		sTE: String,
+		sTJ: String,
+		des: String
 	}
-	.testBox{
-		width: 100vw;
-		height: 150vh;
-		background: rgba(0, 0, 0, 0.392);
-	}
-</style>
+
+	const { title, sTE, sTJ, des } = defineProps<Props>()
+
+</script>
+
+<template>
+	<div class="c-profile mgb5 mgb10s">
+		<ruby class="s-S -ls-2 -left">{{ title }}</ruby>
+		<h2 class="c-profile__title s-3L -b -ls-2 -left">{{ sTE }}<span class="s-S">{{ sTJ }}</span></h2>
+	</div>
+	<p class="c-profile__des s-M -left -lh-2 -ls-2 mgb10 mgb20s">{{ des }}</p>
+
+</template>

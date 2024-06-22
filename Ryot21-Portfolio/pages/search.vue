@@ -44,7 +44,7 @@
 						<div v-if="products && products.contents && products.contents.length > 0">
 
 							<!-- ページ説明 -->
-							<WorkView :title="t" :sTE="sTE" :sTJ="sTJ" :des="des"/>
+							<PageView :title="t" :sTE="sTE" :sTJ="sTJ" :des="des"/>
 							<!-- 検索結果 -->
 							<div class="mgb3 mgb5s" v-if="query">
 								<h2 class="s-L -right">検索キーワード</h2>
