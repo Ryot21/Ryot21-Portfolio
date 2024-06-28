@@ -33,7 +33,7 @@
 														</NuxtLink>
 												</li>
 												<li class="navItem">
-														<NuxtLink to="/contact" class="navItem__link -lh-1">
+														<NuxtLink to="/contact/" class="navItem__link -lh-1">
 															<span class="navItem-title -main -s-nav s-ML -b -ls-1">CONTACT</span>
 														</NuxtLink>
 												</li>

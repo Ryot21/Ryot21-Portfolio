@@ -64,7 +64,7 @@
                         </NuxtLink>
                     </li>
                     <li class="navItem_footer mgb2">
-                        <NuxtLink to="/contact" class="-lh-1 -center">
+                        <NuxtLink to="/contact/" class="-lh-1 -center">
                             <span class="s-M -s-nav -ls-2 -f-En01">お問い合わせ</span>
                         </NuxtLink>
                     </li>
