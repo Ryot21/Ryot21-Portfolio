@@ -96,7 +96,7 @@
 				<form @submit="onSubmit">
 				<!-- <form :action="config.public.newt.formEndpoint" method="post"> -->
 					<dl class="mgb3 mgb3s">
-						<dd><label class="s-L -left" for="subject">件名：</label></dd>
+						<dd class="mgb1 mgb1s"><label class="s-L -left" for="subject">件名：</label></dd>
 						<dt>
 							<input id="subject" v-model="subject" v-bind="subjectProps" name="subject" type="text"  placeholder="件名" required>
 							<!-- エラ〜 -->
@@ -106,7 +106,7 @@
 						</dt>
 					</dl>
 					<dl class="mgb3 mgb3s">
-						<dd><label class="s-L -left" for="name">お名前：</label></dd>
+						<dd class="mgb1 mgb1s"><label class="s-L -left" for="name">お名前：</label></dd>
 						<dt>
 							<input id="name" v-model="name" v-bind="nameProps" name="name" type="text"  placeholder="お名前" required>
 							<!-- エラ〜 -->
@@ -116,7 +116,7 @@
 						</dt>
 					</dl>
 					<dl class="mgb3 mgb3s">
-						<dd><label class="s-L -left" for="email">メールアドレス：</label></dd>
+						<dd class="mgb1 mgb1s"><label class="s-L -left" for="email">メールアドレス：</label></dd>
 						<dt>
 							<input id="email" v-model="email" v-bind="emailProps" name="email" type="email" placeholder="メールアドレス" required>
 							<!-- エラ〜 -->
@@ -126,7 +126,7 @@
 						</dt>
 					</dl>
 					<dl class="mgb3 mgb3s">
-						<dd><label class="s-L -left" for="message">お問い合わせ内容：</label></dd>
+						<dd class="mgb1 mgb1s"><label class="s-L -left" for="message">お問い合わせ内容：</label></dd>
 						<dt>
 							<input id="message" v-model="message" v-bind="messageProps" name="message" placeholder="お問い合わせ内容を入力してください。" required>
 							<!-- エラ〜 -->

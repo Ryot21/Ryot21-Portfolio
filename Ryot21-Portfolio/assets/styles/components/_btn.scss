@@ -99,6 +99,95 @@ button{
 			border-radius: 5px;
 		}
 	}
+	&.-pageLink{
+		position: relative;
+		width: 35%;
+		margin: auto;
+		border: 1px solid $main-color--b;
+		transition: all .5s;
+		@include min(768){
+			width: 200px;
+		}
+		&::before{// グレー背景
+			content: "";
+			position: absolute;
+			top: 60%;
+			left: 83%;
+			width: 20%;
+			height:10px;
+			background: $main-color--gray;
+			transition: all .5s;
+			z-index: 1;
+			@include min(768){
+				top: 65%;
+				left: 75%;
+				width: 30%;	
+			}
+		}
+		&:hover{
+			// background: $main-color--gray;
+			&::before{
+				background: inherit;
+			}
+		}
+		a{
+			position: relative;
+			display: block;
+			padding: 3% 3% 4%;
+			transition: all .5s;
+			@include min(768){
+				padding: 2% 3% 3%;
+			}
+			// 矢印
+			&::before{
+				content: "";
+				position: absolute;
+				top: 71%;
+				left: 83%;
+				width: 4.5%;
+				height: 1px;
+				background: $main-color--b;
+				transform: rotate(-45deg);
+				transition: all .5s;
+				z-index: 1;
+				@include min(768){
+					top: 71%;
+					left: 74.5%;
+				}
+			}
+			&::after{
+				content: "";
+				position: absolute;
+				top: 78.5%;
+				left: 83.5%;
+				width: 19%;
+				height: 1px;
+				background: $main-color--b;
+				transition: all .5s;
+				z-index: 2;
+				@include min(768){
+					top: 80%;
+					left: 75.5%;
+					width: 26%;
+				}
+			}
+			&:hover{
+				box-shadow: inset 5px 5px 5px $main-color--Dgray,
+										inset -5px -5px 5px $main-color--Dgray;
+				&::before{
+					left: 83%;
+					@include min(768){left: 72.5%;}
+				}
+				&::after{
+					left: 83.5%;
+					@include min(768){
+						left: 73.5%;
+						width: 28%;
+					}
+				}
+			}
+		}
+	}
 }
 
 /*    Link
