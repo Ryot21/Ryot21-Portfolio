@@ -12,14 +12,14 @@
 	<div>
 		<!-- <picView /> -->
 		<div class="c-contents mgt-contents">
-			<div class="c-contents__inner w1100">
+			<div class="c-contents__inner w1100 mgb20 mgb20s">
 
 				<!-- ページ説明 -->
 				<div class="c-profile mgb5 mgb10s">
 					<ruby class="s-S -ls-2 -left">{{ t }}</ruby>
 					<h2 class="c-profile__title s-3L -b -ls-2 -left">{{ sTE }}<span class="s-S">{{ sTJ }}</span></h2>
 				</div>
-				<p class="c-profile__des s-M -left -lh-2 -ls-2 mgb10 mgb20s">
+				<p class="c-profile__des s-M -left -lh-2 -ls-2 mgb10 mgb10s">
 						1991年生まれの4児の父。<br>
 						<br>
 						2013年4月に都内の化学メーカーに入社後、営業として7年間勤めた経験を持つ。
@@ -29,6 +29,10 @@
 						<br>
 						以上の経験から、ビジネスのニーズに応じた効果的なWEB戦略の提案や、ユーザーに響くデザインを生み出す能力を身につけました。これまでの経験を活かし、クライアントのビジネスが一層輝くよう支援していくことが私の仕事です。
 				</p>
+				<!-- お問い合わせページへ -->
+				<div class="c-btn -pageLink -right">
+					<NuxtLink to="/contact" class="s-M -center">お問い合わせ</NuxtLink>
+				</div>
 			</div>
 		</div>
 	</div>

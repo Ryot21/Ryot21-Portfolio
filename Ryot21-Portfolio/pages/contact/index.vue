@@ -84,7 +84,7 @@
 <template>
 
 		<div class="c-contents mgt-contents">
-			<div class="c-contents__inner w1100 mgb10 mgb20s">
+			<div class="c-contents__inner w1100 mgb20 mgb20s">
 				<!-- ページ説明 -->
 				<div class="c-profile mgb5 mgb10s">
 					<ruby class="s-S -ls-2 -left">お問い合わせ</ruby>

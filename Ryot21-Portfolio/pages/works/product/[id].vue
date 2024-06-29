@@ -59,7 +59,12 @@
 
 					<!-- URL -->
 					<h3   class="c-detailArea__subTitle -left mgb2 mgb2s"><span class="s-ML -b">URL</span></h3>
-					<p   class="c-detailArea__link s-S -s12 -lh-2 -left">{{ article.url }}</p>
+					<p   class="c-detailArea__link s-S -s12 -lh-2 -left mgb10 mgb5s">{{ article.url }}</p>
+
+					<!-- CONTACTページに戻る -->
+					<div class="c-btn -pageLink -right">
+						<NuxtLink to="/contact" class="s-M -center">制作のご依頼</NuxtLink>
+					</div>
 				</li>
 			</ul>
 		</div>

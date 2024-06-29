@@ -142,7 +142,7 @@
 		.imgBox{
 			&.-cv{
 				width: 100lvw;
-				height: 100lvh;
+				height: 85lvh;
 				max-height: 1320px;
 				@include min(768){
 					height: 70lvh;

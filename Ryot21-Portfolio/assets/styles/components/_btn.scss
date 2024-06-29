@@ -192,6 +192,11 @@ button{
 				}
 			}
 		}
+
+		// 左寄せ
+		&.-right{
+			margin: auto 0 auto auto;
+		}
 	}
 }
 
