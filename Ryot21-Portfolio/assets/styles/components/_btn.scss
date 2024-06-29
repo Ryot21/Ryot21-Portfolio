@@ -117,7 +117,7 @@ button{
 			height:10px;
 			background: $main-color--gray;
 			transition: all .5s;
-			z-index: 1;
+			// z-index: 1;
 			@include min(768){
 				top: 65%;
 				left: 75%;
@@ -130,7 +130,12 @@ button{
 				background: inherit;
 			}
 		}
-		a{
+		button{
+			width: 100%;
+			background: inherit;
+			border: none;
+		}
+		a,button{
 			position: relative;
 			display: block;
 			padding: 3% 3% 4%;
@@ -149,7 +154,7 @@ button{
 				background: $main-color--b;
 				transform: rotate(-45deg);
 				transition: all .5s;
-				z-index: 1;
+				z-index: 2;
 				@include min(768){
 					top: 71%;
 					left: 74.5%;

@@ -78,67 +78,78 @@
 		]
 	})
 
-	const t = "お問い合わせ"
-	const sTE = "CONTACT"
-	const sTJ = "WEBサイト制作依頼 + お仕事のご紹介"
-	const des = "埼玉県狭山市在住のWEBエンジニア「RYOTA MAEDA」です。様々なWEBサイト制作のご依頼・お仕事紹介のご依頼・お問い合わせをお待ちしております！"
 
 </script>
 
 <template>
 
 		<div class="c-contents mgt-contents">
-			<div class="c-contents__inner w1100">
+			<div class="c-contents__inner w1100 mgb10 mgb20s">
 				<!-- ページ説明 -->
-				<PageView :title="t" :sTE="sTE" :sTJ="sTJ" :des="des"/>
+				<div class="c-profile mgb5 mgb10s">
+					<ruby class="s-S -ls-2 -left">お問い合わせ</ruby>
+					<h2 class="c-profile__title s-3L -b -ls-2 -left">CONTACT<span class="s-S">WEBサイト制作依頼 + お仕事のご紹介</span></h2>
+				</div>
+				<p class="c-profile__des s-M -left -lh-2 -ls-2 mgb10 mgb20s">
+					埼玉県狭山市在住のWEBエンジニア「RYOTA MAEDA」です。<br>
+					様々なWEBサイト制作のご依頼・お仕事紹介のご依頼・お問い合わせをお待ちしております！
+				</p>
+
 
 				<!-- お問い合わせフォーム -->
 				<form @submit="onSubmit">
 				<!-- <form :action="config.public.newt.formEndpoint" method="post"> -->
-					<dl class="mgb3 mgb3s">
-						<dd class="mgb1 mgb1s"><label class="s-L -left" for="subject">件名：</label></dd>
+					<dl class="mgb3 mgb5s">
+						<dd class="mgb1 mgb2s"><label class="required s-L -left -ws-n -ls-2" for="subject">件名</label></dd>
 						<dt>
-							<input id="subject" v-model="subject" v-bind="subjectProps" name="subject" type="text"  placeholder="件名" required>
+							<input id="subject" class="-ls-2" v-model="subject" v-bind="subjectProps" name="subject" type="text"  placeholder="WEB制作の依頼" required>
 							<!-- エラ〜 -->
-							<span v-if="errors.subject" id="error-subject-required" aria-live="assertive">
+							<p v-if="errors.subject" id="error-subject-required" class="s-SS -left -red" aria-live="assertive">
 								{{ errors.subject }}
-							</span>
+							</p>
 						</dt>
 					</dl>
-					<dl class="mgb3 mgb3s">
-						<dd class="mgb1 mgb1s"><label class="s-L -left" for="name">お名前：</label></dd>
+					<dl class="mgb3 mgb5s">
+						<dd class="mgb1 mgb2s"><label class="required s-L -left -ws-n -ls-2" for="name">お名前</label></dd>
 						<dt>
-							<input id="name" v-model="name" v-bind="nameProps" name="name" type="text"  placeholder="お名前" required>
+							<input id="name" class="-ls-2" v-model="name" v-bind="nameProps" name="name" type="text"  placeholder="狭山　太郎" required>
 							<!-- エラ〜 -->
-							<span v-if="errors.name" id="error-name-required" aria-live="assertive">
+							<p v-if="errors.name" id="error-name-required" class="s-SS -left -red" aria-live="assertive">
 								{{ errors.name }}
-							</span>
+							</p>
 						</dt>
 					</dl>
-					<dl class="mgb3 mgb3s">
-						<dd class="mgb1 mgb1s"><label class="s-L -left" for="email">メールアドレス：</label></dd>
+					<dl class="mgb3 mgb5s">
+						<dd class="mgb1 mgb2s"><label class="required s-L -left -ws-n -ls-2" for="email">メールアドレス</label></dd>
 						<dt>
-							<input id="email" v-model="email" v-bind="emailProps" name="email" type="email" placeholder="メールアドレス" required>
+							<input id="email" class="-ls-2" v-model="email" v-bind="emailProps" name="email" type="email" placeholder="xxx@gmail.com" required>
 							<!-- エラ〜 -->
-							<span v-if="errors.email" id="error-email-required" aria-live="assertive">
+							<p v-if="errors.email" id="error-email-required" class="s-SS -left -red" aria-live="assertive">
 								{{ errors.email }}
-							</span>
+							</p>
 						</dt>
 					</dl>
-					<dl class="mgb3 mgb3s">
-						<dd class="mgb1 mgb1s"><label class="s-L -left" for="message">お問い合わせ内容：</label></dd>
+					<dl class="mgb10 mgb10s">
+						<dd class="mgb1 mgb2s"><label class="required s-L -left -ws-n -ls-2" for="message">お問い合わせ内容</label></dd>
 						<dt>
-							<input id="message" v-model="message" v-bind="messageProps" name="message" placeholder="お問い合わせ内容を入力してください。" required>
+							<textarea id="message" class="-ls-2" v-model="message" v-bind="messageProps" name="message" />
+							<!-- <input id="message" v-model="message" v-bind="messageProps" name="message" placeholder="お問い合わせ内容を入力してください。" required> -->
 							<!-- エラ〜 -->
-							<span v-if="errors.message" id="error-message-required" aria-live="assertive">
+							<p v-if="errors.message" id="error-message-required" class="s-SS -left -red" aria-live="assertive">
 								{{ errors.message }}
-							</span>
+							</p>
 						</dt>
 					</dl>
-					<button type="submit">送信</button>
+					<div class="c-btn -pageLink">
+						<button type="submit" class="s-M -center">送信</button>
+					</div>
 				</form>
 
 			</div>
 		</div>
 
 </template>
+
+<style lang="scss">
+	.grecaptcha-badge { visibility: hidden; }
+</style>
