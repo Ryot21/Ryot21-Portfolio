@@ -45,13 +45,30 @@
 			formData.append(key, value)
 		})
 
-		await fetch(config.public.newt.formEndpoint, {
-			method: 'POST',
-			body: formData,
-			headers: {
-				Accept: 'application/json'
+		// await fetch(config.public.newt.formEndpoint, {
+		// 	method: 'POST',
+		// 	body: formData,
+		// 	headers: {
+		// 		Accept: 'application/json'
+		// 	}
+		// })
+		try {
+			const response = await fetch(config.public.newt.formEndpoint, {
+				method: 'POST',
+				body: formData,
+				headers: {
+					Accept: 'application/json'
+				}
+			})
+
+			if (response.ok) {
+				await navigateTo('/contact/thanks')
+			} else {
+				await navigateTo('/contact/error')
 			}
-		})
+		} catch (err) {
+			await navigateTo('/contact/error')
+		}
 	})
 
 	useHead({
