@@ -52,7 +52,7 @@ function getLabelForSegment(segment) {
 
 <template>
 	<nav aria-label="c-breadcrumb__lists">
-    <ol class="c-breadcrumb__lists mgb2 mgb10s">
+    <ol class="c-breadcrumb__lists mgb2 mgb3s">
 			<!-- トップ -->
 			<li class="c-breadcrumb__item">
 				<NuxtLink class="c-breadcrumb__link" to="/">TOP</NuxtLink>

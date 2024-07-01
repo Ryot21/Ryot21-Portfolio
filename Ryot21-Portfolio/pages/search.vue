@@ -48,8 +48,8 @@
 							<PageView :title="t" :sTE="sTE" :sTJ="sTJ" :des="des"/>
 							<!-- 検索結果 -->
 							<div class="mgb3 mgb5s" v-if="query">
-								<h2 class="s-L -right">検索キーワード</h2>
-								<p class="s-M -right">#{{ query }}</p>
+								<h2 class="s-L -center">検索キーワード</h2>
+								<p class="s-M -center">#{{ query }}</p>
 							</div>
 							<!-- 検索フォーム -->
 							<PartsSearchForm />
