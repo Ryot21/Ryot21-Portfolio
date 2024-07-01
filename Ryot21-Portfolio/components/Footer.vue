@@ -54,12 +54,12 @@
                         </NuxtLink>
                     </li>
                     <li class="navItem_footer mgb2">
-                        <NuxtLink to="/works" class="-lh-1 -center">
+                        <NuxtLink to="/product" class="-lh-1 -center">
                             <span class="s-M -s-nav -ls-2 -f-En01">制作実績</span>
                         </NuxtLink>
                     </li>
                     <li class="navItem_footer mgb2">
-                        <NuxtLink to="/works/ses" class="-lh-1 -center">
+                        <NuxtLink to="/ses" class="-lh-1 -center">
                             <span class="s-M -s-nav -ls-2 -f-En01">エージェント</span>
                         </NuxtLink>
                     </li>

@@ -15,7 +15,7 @@
 	<!-- 今まで制作したWEBサイトのご紹介 -->
 		<ul class="c-flex -col2_3 mgb5 mgb5s">
 			<li v-for="post in posts" :key="post.id" class="flexItem mgb5 mgb5s">
-				<NuxtLink :to="`/works/product/${post.id}`" class="">
+				<NuxtLink :to="`/product/${post.id}`" class="">
 					<div class="c-archive__img a-zoomImg">
 						<div class="imgBox mgb3 mgb3s"><img :src="post.thumbnail?.url"></div>
 					</div>

@@ -42,7 +42,8 @@
 
 						<!-- 検索結果 > 1以上の場合 -->
 						<div v-if="products && products.contents && products.contents.length > 0">
-
+							<!-- パンくず -->
+							<PartsBreadcrumb/>
 							<!-- ページ説明 -->
 							<PageView :title="t" :sTE="sTE" :sTJ="sTJ" :des="des"/>
 							<!-- 検索結果 -->

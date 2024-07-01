@@ -23,6 +23,8 @@
 <template>
 	<div class="c-contents mgt-contents">
 		<div class="c-contents__inner w1100">
+			<!-- パンくず -->
+			<PartsBreadcrumb/>
 			<div class="c-profile mgb5 mgb10s">
 				<ruby class="s-S -ls-2 -left">ブログ</ruby>
 				<h2 class="c-profile__title s-3L -b -ls-2 -left">BLOG<span class="s-S">煌めく明日に向かって</span></h2>

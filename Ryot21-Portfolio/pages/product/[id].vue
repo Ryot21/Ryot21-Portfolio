@@ -20,7 +20,8 @@
 <template>
 	<div v-if="article" class="c-contents mgt-contents">
 		<div class="c-contents__inner w1100 mgb10 mgb20s">
-			<!-- <PartsBreadcrumb /> -->
+			<!-- パンくず -->
+			<PartsBreadcrumb />
 			<ul class="c-detailArea">
 				<li class="c-detailArea__left mgb5s">
 					<ul class="c-detailArea__imgLists">

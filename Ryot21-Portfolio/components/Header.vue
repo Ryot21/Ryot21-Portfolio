@@ -1,3 +1,7 @@
+<script setup>
+
+</script>
+
 <template>
 		<!-- header / TOPと各ページの構造が異なる -->
 		<!-- <header id="header" class="c-header -fixed a-scroll-header"> -->
@@ -23,12 +27,12 @@
 														</NuxtLink>
 												</li>
 												<li class="navItem">
-														<NuxtLink to="/works" class="navItem__link -lh-1">
-															<span class="navItem-title -main -s-nav s-ML -b -ls-1">WORKS</span>
+														<NuxtLink to="/product" class="navItem__link -lh-1">
+															<span class="navItem-title -main -s-nav s-ML -b -ls-1">PRODUCT</span>
 														</NuxtLink>
 												</li>
 												<li class="navItem">
-														<NuxtLink to="/works/ses" class="navItem__link -lh-1">
+														<NuxtLink to="/ses" class="navItem__link -lh-1">
 															<span class="navItem-title -main -s-nav s-ML -b -ls-1">SES</span>
 														</NuxtLink>
 												</li>
@@ -46,10 +50,6 @@
     </header>
     <!-- //header -->
 </template>
-
-<script setup>
-
-</script>
 
 <style lang="scss">
 	.navItem{

@@ -13,6 +13,8 @@
 		<!-- <picView /> -->
 		<div class="c-contents mgt-contents">
 			<div class="c-contents__inner w1100 mgb20 mgb20s">
+				<!-- パンくず -->
+				<PartsBreadcrumb/>
 
 				<!-- ページ説明 -->
 				<div class="c-profile mgb5 mgb10s">

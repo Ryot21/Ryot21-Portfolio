@@ -10,8 +10,8 @@
 				<ul class="">
 					<li class=""><NuxtLink class="s-SS -ws-n -left"  to="/about"><span class="s-ML -s14 -b -ls-2 pdr5 pdr4s">ABOUT</span></NuxtLink></li>
 					<li class=""><NuxtLink class="s-SS -ws-n -left"  to="/media"><span class="s-ML -s14 -b -ls-2 pdr5 pdr4s">BLOG</span></NuxtLink></li>
-					<li class=""><NuxtLink class="s-SS -ws-n -left"  to="/works"><span class="s-ML -s14 -b -ls-2 pdr5 pdr4s">WORKS</span></NuxtLink></li>
-					<li class=""><NuxtLink class="s-SS -ws-n -left"  to="/works/ses"><span class="s-ML -s14 -b -ls-2 pdr5 pdr4s">SES</span></NuxtLink></li>
+					<li class=""><NuxtLink class="s-SS -ws-n -left"  to="/product"><span class="s-ML -s14 -b -ls-2 pdr5 pdr4s">PRODUCT</span></NuxtLink></li>
+					<li class=""><NuxtLink class="s-SS -ws-n -left"  to="/ses"><span class="s-ML -s14 -b -ls-2 pdr5 pdr4s">SES</span></NuxtLink></li>
 					<li class="mgb15 mgb15s">
 											<NuxtLink class="s-SS -ws-n -left"  to="/contact/"><span class="s-ML -s14 -b -ls-2 pdr5 pdr4s">CONTACT</span></NuxtLink>
 					</li>

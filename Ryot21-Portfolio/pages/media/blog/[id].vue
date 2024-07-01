@@ -20,7 +20,8 @@
 <template>
 	<div v-if="article" class="c-contents mgt-contents">
 		<div class="c-contents__inner w1100 mgb10 mgb20s">
-			<!-- <PartsBreadcrumb /> -->
+			<!-- パンくず -->
+			<PartsBreadcrumb />
 			<div class="c-blogArea">
 					<!-- 画像 -->
 					<div v-for="image in article?.images" :key="image" class="c-blogArea__img mgb8 mgb10s a-fadeUp -sp1">

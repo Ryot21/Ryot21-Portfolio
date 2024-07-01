@@ -85,6 +85,9 @@
 
 		<div class="c-contents mgt-contents">
 			<div class="c-contents__inner w1100 mgb20 mgb20s">
+				<!-- パンくず -->
+				<PartsBreadcrumb />
+
 				<!-- ページ説明 -->
 				<div class="c-profile mgb5 mgb10s">
 					<ruby class="s-S -ls-2 -left">お問い合わせ</ruby>
@@ -141,7 +144,7 @@
 						</dt>
 					</dl>
 					<div class="c-btn -pageLink">
-						<button type="submit" class="s-M -center">送信</button>
+						<button type="submit" class="s-M -center -ls-2">送信</button>
 					</div>
 				</form>
 
