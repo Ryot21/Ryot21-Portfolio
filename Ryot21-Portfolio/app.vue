@@ -4,9 +4,10 @@
 </script>
 
 <template>
-  
-  <Header /><!-- ヘッダー -->
-
+  <div id="top">
+    <Header /><!-- ヘッダー -->
+  </div>
+  <a href="#top" class="c-btn-top -center a-fadeUp -sp2">TOPへ</a>
   <PartsHamburgerNavi /><!-- ハンバーガーメニュー -->
 
   <NuxtPage /><!-- コンテンツ -->

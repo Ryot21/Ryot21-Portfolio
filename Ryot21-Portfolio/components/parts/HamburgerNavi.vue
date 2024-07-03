@@ -8,12 +8,12 @@
 			<label id="" class="c-hnav__cheakbox c-hnav__close" for="c-hnav__checkbox"></label>
 			<div class="c-hnav__content">
 				<ul class="">
-					<li class=""><NuxtLink class="s-SS -ws-n -left"  to="/about"><span class="s-ML -s14 -b -ls-2 pdr5 pdr4s">ABOUT</span></NuxtLink></li>
-					<li class=""><NuxtLink class="s-SS -ws-n -left"  to="/media"><span class="s-ML -s14 -b -ls-2 pdr5 pdr4s">BLOG</span></NuxtLink></li>
-					<li class=""><NuxtLink class="s-SS -ws-n -left"  to="/product"><span class="s-ML -s14 -b -ls-2 pdr5 pdr4s">PRODUCT</span></NuxtLink></li>
-					<li class=""><NuxtLink class="s-SS -ws-n -left"  to="/ses"><span class="s-ML -s14 -b -ls-2 pdr5 pdr4s">SES</span></NuxtLink></li>
+					<li class=""><NuxtLink class="s-SS -ws-n -left"  to="/about#top"><span class="s-ML -s14 -b -ls-2 pdr5 pdr4s">ABOUT</span></NuxtLink></li>
+					<li class=""><NuxtLink class="s-SS -ws-n -left"  to="/media#top"><span class="s-ML -s14 -b -ls-2 pdr5 pdr4s">BLOG</span></NuxtLink></li>
+					<li class=""><NuxtLink class="s-SS -ws-n -left"  to="/product#top"><span class="s-ML -s14 -b -ls-2 pdr5 pdr4s">PRODUCT</span></NuxtLink></li>
+					<li class=""><NuxtLink class="s-SS -ws-n -left"  to="/ses#top"><span class="s-ML -s14 -b -ls-2 pdr5 pdr4s">SES</span></NuxtLink></li>
 					<li class="mgb15 mgb15s">
-											<NuxtLink class="s-SS -ws-n -left"  to="/contact/"><span class="s-ML -s14 -b -ls-2 pdr5 pdr4s">CONTACT</span></NuxtLink>
+											<NuxtLink class="s-SS -ws-n -left"  to="/contact#top"><span class="s-ML -s14 -b -ls-2 pdr5 pdr4s">CONTACT</span></NuxtLink>
 					</li>
 				</ul>
 							<!--　ハンバーガー > ロゴ関係 -->

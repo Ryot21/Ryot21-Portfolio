@@ -17,27 +17,27 @@
                     <li class="tb-pc navArea c-mainNav -borderVer">
 											<ul class="c-mainNav__lists -col4">
 												<li class="navItem">
-														<NuxtLink to="/about" class="navItem__link -lh-1">
+														<NuxtLink to="/about#top" class="navItem__link -lh-1">
 															<span class="navItem-title -main -s-nav s-ML -b -ls-1">ABOUT</span>
 														</NuxtLink>
 												</li>
 												<li class="navItem">
-														<NuxtLink to="/media" class="navItem__link -lh-1">
+														<NuxtLink to="/media#top" class="navItem__link -lh-1">
 															<span class="navItem-title -main -s-nav s-ML -b -ls-1">BLOG</span>
 														</NuxtLink>
 												</li>
 												<li class="navItem">
-														<NuxtLink to="/product" class="navItem__link -lh-1">
+														<NuxtLink to="/product#top" class="navItem__link -lh-1">
 															<span class="navItem-title -main -s-nav s-ML -b -ls-1">PRODUCT</span>
 														</NuxtLink>
 												</li>
 												<li class="navItem">
-														<NuxtLink to="/ses" class="navItem__link -lh-1">
+														<NuxtLink to="/ses#top" class="navItem__link -lh-1">
 															<span class="navItem-title -main -s-nav s-ML -b -ls-1">SES</span>
 														</NuxtLink>
 												</li>
 												<li class="navItem">
-														<NuxtLink to="/contact/" class="navItem__link -lh-1">
+														<NuxtLink to="/contact#top" class="navItem__link -lh-1">
 															<span class="navItem-title -main -s-nav s-ML -b -ls-1">CONTACT</span>
 														</NuxtLink>
 												</li>
