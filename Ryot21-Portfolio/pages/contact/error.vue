@@ -1,6 +1,6 @@
 <script setup lang="ts">
 	useHead({
-		title: "お問い合わせの送信が出来ませんでした。 | Ryot21-Portfolio",
+		title: "送信が出来ませんでした。 | Ryot21-Portfolio",
 		meta: [
 			{ name: 'description', content: 'お問い合わせの送信が失敗しました（汗）' }
 		]

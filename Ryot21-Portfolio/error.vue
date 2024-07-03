@@ -1,5 +1,6 @@
 
 <script setup lang="ts">
+  useHead({title: "エラーページ",})
 	const error = useError();
 </script>
 <template>

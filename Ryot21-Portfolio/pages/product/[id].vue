@@ -7,6 +7,8 @@
 		const { data: article } = await useFetch('/api/workDetail', {
 			params: { slug: String(slug) },
 		})
+		useHead({title: article.value?.title + " | Ryot21-Portfolio",})
+
 
 		if (!article.value) {
 			throw createError({

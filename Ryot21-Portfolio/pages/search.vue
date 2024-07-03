@@ -1,5 +1,11 @@
 
 <script setup lang="ts">
+	useHead({
+		title: "検索結果 | Ryot21-Portfolio",
+		meta: [
+			{ name: 'description', content: '埼玉県狭山市在住のWEBエンジニア「RYOTA MAEDA」の制作実績ページです。' }
+		]
+	})
 
 	import type { MicroCMSQueries } from 'microcms-js-sdk'
 	import { WORK_LIMIT_PAGE } from '~/server/setting/siteSettings';

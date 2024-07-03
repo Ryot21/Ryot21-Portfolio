@@ -1,5 +1,11 @@
 <!-- works > お仕事紹介ページ -->
 <script setup lang="ts">
+	useHead({
+		title: "お仕事紹介 | Ryot21-Portfolio",
+		meta: [
+			{ name: 'description', content: '埼玉県狭山市在住のWEBエンジニア「RYOTA MAEDA」です。経験の浅いエンジニア・コーダー志望の方や新しい技術や異なる言語のプロジェクトに挑戦したいと考えている方々をサポートするため、エンジニア・コーダー向けにエージェント業も行っております。' }
+		]
+	})
 
 	const t = "エンジニア向けのお仕事紹介"
 	const sTE = "System Engineering Service"

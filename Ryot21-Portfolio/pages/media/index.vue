@@ -3,6 +3,13 @@
 	import type { MicroCMSQueries } from 'microcms-js-sdk';
 	import { BLOG_LIMIT_PAGE } from '~/server/setting/siteSettings'
 	
+	useHead({
+		title: "ブログ一覧 | Ryot21-Portfolio",
+		meta: [
+			{ name: 'description', content: '私はWEBエンジニアとしての日々の学びや体験をポートフォリオサイトに訪れてくださった皆様に共有したいと思いブログを始めました。 ここでは、仕事を通じて学んだ話からプライベートな出来事まで、様々な話題を取り上げていきます。' }
+		]
+	})
+
 	const route = useRoute()
 	const page = Number(route.params.id || 1)
 

@@ -1,5 +1,12 @@
 <script setup lang="ts">
 
+	useHead({
+		title: "制作実績一覧 | Ryot21-Portfolio",
+		meta: [
+			{ name: 'description', content: '埼玉県狭山市在住のWEBエンジニア「RYOTA MAEDA」の制作実績一覧ページです。' }
+		]
+	})
+
 	const route = useRoute();
 	const page  = Number(route.params.id || 1);
 	const tagId = String(route.params.tagId || "");

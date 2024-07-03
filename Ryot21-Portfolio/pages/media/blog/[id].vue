@@ -1,11 +1,16 @@
 <!-- blogs > 詳細ページ -->
 <script setup lang="ts">
-
 		const route = useRoute();
 		const slug  = route.params.id;
 
 		const { data: article } = await useFetch('/api/blogDetail', {
 			params: { slug: String(slug) },
+		})
+		useHead({
+			title: article.value?.title + " | Ryot21-Portfolio",
+			meta: [
+			{ name: 'description', content: '私はWEBエンジニアとしての日々の学びや体験をポートフォリオサイトに訪れてくださった皆様に共有したいと思いブログを始めました。 ここでは、仕事を通じて学んだ話からプライベートな出来事まで、様々な話題を取り上げていきます。' }
+		]
 		})
 
 		if (!article.value) {

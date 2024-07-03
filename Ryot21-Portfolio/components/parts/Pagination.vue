@@ -22,7 +22,7 @@
 	function getPath(p: number) {// 2ページ目のリンクをクリックした場合、PaginationのgetPath関数が呼ばれる。
 			if (selectedTagId) return `${p}`// 追加　タグありのリンク
 			if (keyword) return `/search?q=${keyword}&page=${p}`// 検索キーワードにヒットした場合
-			return `/works/product/page/${p}`;// その他 
+			return `/product/page/${p}`;// その他 
 	}
 
 </script>

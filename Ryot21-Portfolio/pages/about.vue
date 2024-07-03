@@ -1,5 +1,11 @@
 <!-- Aboutページ -->
 <script setup lang="ts">
+	useHead({
+		title: "作者について | Ryot21-Portfolio",
+		meta: [
+			{ name: 'description', content: '埼玉県狭山市在住のWEBエンジニア「RYOTA MAEDA」です。様々なWEBサイト制作のご依頼・お仕事紹介のご依頼お待ちしております！' }
+		]
+	})
 
 	const t   = "前田 リョウタ"
 	const sTE = "RYOTA MAEDA"
