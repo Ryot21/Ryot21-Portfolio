@@ -27,17 +27,18 @@
 		<div class="c-contents__inner w1100 mgb10 mgb20s">
 			<!-- パンくず -->
 			<PartsBreadcrumb />
+
 			<div class="c-blogArea">
 					<!-- 画像 -->
-					<div v-for="image in article?.images" :key="image" class="c-blogArea__img mgb8 mgb10s a-fadeUp -sp1">
+					<!-- <div v-for="image in article?.images" :key="image" class="c-blogArea__img mgb8 mgb10s a-fadeUp -sp1">
 						<div v-if="image" class="imgBox">
 							<img :src="image.url" alt="ブログ画像">
 						</div>
-					</div>
+					</div> -->
 					<!-- タイトル -->
-					<h2  class="c-blogArea__title s-LL -left mgb2 mgb2s">{{ article.title }}</h2>
+					<h2  class="c-blogArea__title s-LL -left mgb2 mgb2s a-fade -sp1">{{ article.title }}</h2>
 					<!-- カテゴリー -->
-					<ul class="c-blogArea__categoryLists">
+					<ul class="c-blogArea__categoryLists a-fade -sp1">
 						<li v-for="categoryItem in article?.category" :key="categoryItem" class="c-tag">
 							<p class="s-S">#{{ categoryItem }}</p>
 						</li>
@@ -47,10 +48,10 @@
 					<!-- <h2  class="c-blogArea__title s-M -left mgb1 mgb1s">{{ data.subTitle }}</h2> -->
 
 					<!-- リリース日 -->
-					<p class="c-blogArea__day s-S -right mgb5 mgb10s">{{ article.date }}</p>
+					<p class="c-blogArea__day s-S -right mgb5 mgb10s a-fade -sp1">{{ article.date }}</p>
 
 					<!-- 本文 -->
-					<p class="c-blogArea__text s-ML -s12 -lh-2 mgb5 mgb5s">{{ article.text }}</p>
+					<p class="c-blogArea__text s-ML -s12 -lh-2 mgb5 mgb5s a-fade -tm05 -sp1">{{ article.text }}</p>
 
 					<!-- 書籍(未実装) -->
 					<!-- <div v-if="data.book">

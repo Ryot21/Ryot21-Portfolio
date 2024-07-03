@@ -29,7 +29,7 @@
 
 <template>
 	<!-- ページネーション / 2ページ以上ある場合、表示させる -->
-	<div v-if="numPages > 2" class="c-pagination">
+	<div v-if="numPages > 2" class="c-pagination a-fade -tm1 -sp1">
 		<ul class="c-pagination__lists">
 
 			<!-- ①戻る / 2ページ以降の場合、「1」表示させる -->

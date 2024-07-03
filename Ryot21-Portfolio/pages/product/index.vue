@@ -22,8 +22,10 @@
 			<div class="c-contents__inner w1100">
 				<!-- パンくず -->
 				<PartsBreadcrumb />
+
 				<!-- ページ説明 -->
 				<PageView :title="t" :sTE="sTE" :sTJ="sTJ" :des="des"/>
+				
 				<!-- 一覧リスト表示 -->
 				<Archive :page="1" :tagId="tagId"/>
 			</div>

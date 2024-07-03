@@ -32,11 +32,12 @@
 		<div class="c-contents__inner w1100">
 			<!-- パンくず -->
 			<PartsBreadcrumb/>
-			<div class="c-profile mgb5 mgb10s">
-				<ruby class="s-S -ls-2 -left">ブログ</ruby>
-				<h2 class="c-profile__title s-3L -b -ls-2 -left">BLOG<span class="s-S">煌めく明日に向かって</span></h2>
+
+			<div class="c-profile mgb5 mgb10s a-fade -sp1">
+				<ruby class="s-S -ls-2 -left">{{ t }}</ruby>
+				<h2 class="c-profile__title s-3L -b -ls-2 -left">{{ sTE }}<span class="s-S">{{ sTJ }}</span></h2>
 			</div>
-			<p class="c-profile__des s-M -left -lh-2 -ls-2 mgb10 mgb20s">
+			<p class="c-profile__des s-M -left -lh-2 -ls-2 mgb10 mgb20s a-fade -tm05 -sp1">
 				私はWEBエンジニアとしての日々の学びや体験をポートフォリオサイトに訪れてくださった皆様に共有したいと思いブログを始めました。
 				ここでは、仕事を通じて学んだ話からプライベートな出来事まで、様々な話題を取り上げていきます。
 				フロントエンドの最新トレンド、実践的なプログラミングのヒント、日々の生活で感じたことなど、多岐にわたる内容を綴っていく予定です。
@@ -46,7 +47,7 @@
 
 			<!-- 今まで制作したWEBサイトのご紹介 -->
 			<div class="c-contents mgb20 mgb20s">
-				<ul class="c-flex -col2_3">
+				<ul class="c-flex -col2_3 a-fade -tm1 -sp1">
 					<li v-for="blog in blogs?.contents" :key="blog.id" class="flexItem mgb5 mgb5s">
 						<NuxtLink :to="`/media/blog/${blog.id}`" class="">
 							<div v-if="blog.thumbnail" class="c-archive__img c-blogArea__img a-zoomImg">

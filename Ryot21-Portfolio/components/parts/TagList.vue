@@ -20,7 +20,7 @@
 </script>
 
 <template>
-	<div class="c-tag mgb5 mgb5s">
+	<div class="c-tag mgb5 mgb5s a-fade -tm1 -sp15">
 		<h2 class="s-L -left mgb2 mgb5s">タグ一覧</h2>
 		<ul class="c-tag__Lists">
 			<li v-for="tag in tags" :key="tag.id"  class="c-tag__Item mgb2 mgb4s">

@@ -24,11 +24,12 @@
 		<div class="c-contents__inner w1100 mgb10 mgb20s">
 			<!-- パンくず -->
 			<PartsBreadcrumb />
+
 			<ul class="c-detailArea">
 				<li class="c-detailArea__left mgb5s">
 					<ul class="c-detailArea__imgLists">
 						<!-- 1枚目 -->
-						<li v-for="image in article.images.workImage" :key="image" class="c-detailArea__imgItem">
+						<li v-for="image in article.images.workImage" :key="image" class="c-detailArea__imgItem a-fade -tm2 -sp1">
 							<div class="c-detailArea__img">
 								<div class="imgBox">
 									<NuxtImg :src="image.url" alt="制作したサイトの実際の画像" />
@@ -41,31 +42,32 @@
 				<li class="c-detailArea__right mgb20s">
 
 					<!-- タイトル -->
-					<h2  class="c-detailArea__title s-LL mgb2 mgb2s">{{ article.title }}</h2>
+					<h2  class="c-detailArea__title s-LL mgb2 mgb2s a-fade -sp1">{{ article.title }}</h2>
 
 					<!-- リリース日 -->
-					<p   class="c-detailArea__day s-S mgb5 mgb10s">リリース日 : {{ article.date }}</p>
+					<p   class="c-detailArea__day s-S mgb5 mgb10s a-fade -sp1">リリース日 : {{ article.date }}</p>
 
 					<!-- タグ_サイト種類 -->
-					<h3   class="c-detailArea__subTitle -left mgb2 mgb2s"><span class="s-ML -b">種類</span></h3>
-					<ul class="c-detailArea__categoryLists mgb5 mgb5s">
+					<h3   class="c-detailArea__subTitle -left mgb2 mgb2s a-fade -tm05 -sp1"><span class="s-ML -b">種類</span></h3>
+					<ul class="c-detailArea__categoryLists mgb5 mgb5s a-fade -tm05 -sp1">
 						<li v-for="label in article?.tag" :key="label" class="mgb1">
 							<p class="s-S -s12">#{{ label.name }}</p>
 						</li>
 					</ul>
 
 					<!-- 説明 -->
-					<div v-if="article.description">
+					<div v-if="article.description" class="a-fade -tm1 -sp1">
 						<h3   class="c-detailArea__subTitle -left mgb2 mgb2s"><span class="s-ML -b">説明</span></h3>
 						<p   class="c-detailArea__text s-S -s12 -lh-2 -left mgb5 mgb5s">{{ article.description }}</p>
 					</div>
 
 					<!-- URL -->
-					<h3   class="c-detailArea__subTitle -left mgb2 mgb2s"><span class="s-ML -b">URL</span></h3>
-					<p   class="c-detailArea__link s-S -s12 -lh-2 -left mgb10 mgb5s">{{ article.url }}</p>
-
+					<div class=" a-fade -tm15 -sp1">
+						<h3   class="c-detailArea__subTitle -left mgb2 mgb2s"><span class="s-ML -b">URL</span></h3>
+						<p   class="c-detailArea__link s-S -s12 -lh-2 -left mgb10 mgb5s">{{ article.url }}</p>
+					</div>
 					<!-- CONTACTページに戻る -->
-					<div class="c-btn -pageLink -right">
+					<div class="c-btn -pageLink -right a-fade -tm2 -sp1">
 						<NuxtLink to="/contact" class="s-M -center">制作のご依頼</NuxtLink>
 					</div>
 				</li>
