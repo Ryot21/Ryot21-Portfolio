@@ -32,7 +32,7 @@
 						<li v-for="image in article.images.workImage" :key="image" class="c-detailArea__imgItem a-fade -tm2 -sp1">
 							<div class="c-detailArea__img">
 								<div class="imgBox">
-									<NuxtImg :src="image.url" alt="制作したサイトの実際の画像" />
+									<img :src="image.url" alt="制作したサイトの実際の画像" />
 								</div>
 							</div>
 						</li>
