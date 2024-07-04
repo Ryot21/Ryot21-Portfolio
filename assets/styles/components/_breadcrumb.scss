@@ -6,7 +6,9 @@
 		flex-wrap: nowrap;
 		align-items: center;
 		padding-left: 0;
-		@include min(768){}
+		@include max(768){
+			justify-content: end;
+		}
 	}
 	&__item{ //li
 		position: relative;
@@ -22,10 +24,9 @@
 			font-size: 1.2rem;
 		}
 		&:last-child{
-			color: $site-color02;
-			&::before{
-				display: none;
-			}
+			padding-right: 0;
+			span{color: $site-color02;}
+			&::before{display: none;}
 		}
 	}
 	&__link{ // a
