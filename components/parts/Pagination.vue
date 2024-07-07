@@ -43,7 +43,7 @@
 			</li>
 			
 			<!-- ③5ページ目以降だったら「…」を表示 -->
-			<li v-if="4 < current">・・・</li>
+			<li v-if="4 < current">…</li>
 
 			<!-- ④配列の数字を書き出す-->
 			<li v-for="p in pager" :key="p" :class="{ active: current === p }" class="c-pagination__item">
@@ -51,7 +51,7 @@
 			</li>
 
 			<!-- ⑤現在のページが全ページ数の-4以下だったら「…」を打つ-->
-			<li v-if="current < numPages-3">・・・</li>
+			<li v-if="current < numPages-3">…</li>
 
 			<!-- ⑥現在のページが全ページ数の-3以下だったら最後のページを表示-->
 			<li v-if="current + 2 < numPages" class="c-pagination__item">
@@ -62,13 +62,7 @@
 			<li v-if="current < numPages">
 					<NuxtLink class="c-pagination__right s-M -center" :to="getPath(current + 1)">Next &raquo;</NuxtLink>
 			</li>
-		
-			<!-- 全ページ表示 -->
-			<!-- <li v-for="page in numPages" :key="page" class="c-pagination__item">
-				<NuxtLink class="c-pagination__link s-ML -center" :class="getClass(page, current)" :to="getPath(page)">
-					{{ page }}
-				</NuxtLink>
-			</li> -->
+
 		</ul>
 	</div>
 </template>

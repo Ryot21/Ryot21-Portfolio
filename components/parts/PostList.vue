@@ -24,7 +24,7 @@
 					<!-- タグ -->
 					<ul class="c-archive__tagLists mgb5 mgb5s">
 						<li v-for="label in post.tag" :key="label.id" class="tagItem mgb1">
-							<p class="s-SS">#{{ label.name }}</p>
+							<p class="s-SS -ws-n">#{{ label.name }}</p>
 						</li>
 						<!-- <li v-for="label in product.type?.name" :key="label" class="tagItem mgb1">
 							<p class="s-SS">- {{ label }}</p>
