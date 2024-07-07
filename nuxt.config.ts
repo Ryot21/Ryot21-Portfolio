@@ -1,5 +1,5 @@
 
-const { API_KEY, SERVICE_DOMAIN } = process.env;
+const { API_KEY, SERVICE_DOMAIN, NUXT_PUBLIC_NEWT_FORM_ENDPOINT, NUXT_PUBLIC_NEWT_RECAPTCHA_SITE_KEY } = process.env;
 
 // defineNuxtConfigには各種CSSやモジュールなどがインポートできる。
 export default defineNuxtConfig({
@@ -8,8 +8,8 @@ export default defineNuxtConfig({
     apiKey: API_KEY,
     public: {
       newt: {
-        formEndpoint: '',
-        recaptchaSiteKey: ''
+        formEndpoint: NUXT_PUBLIC_NEWT_FORM_ENDPOINT,
+        recaptchaSiteKey: NUXT_PUBLIC_NEWT_RECAPTCHA_SITE_KEY
       }
     }
   },
