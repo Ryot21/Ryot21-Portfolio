@@ -1,5 +1,5 @@
 
-const { API_KEY, SERVICE_DOMAIN, NUXT_PUBLIC_NEWT_FORM_ENDPOINT, NUXT_PUBLIC_NEWT_RECAPTCHA_SITE_KEY } = process.env;
+const { API_KEY, SERVICE_DOMAIN } = process.env;
 
 // defineNuxtConfigには各種CSSやモジュールなどがインポートできる。
 export default defineNuxtConfig({
@@ -8,27 +8,23 @@ export default defineNuxtConfig({
     apiKey: API_KEY,
     public: {
       newt: {
-        formEndpoint: "https://ryot21-portfolio.form.newt.so/v1/UetdDsD8V",
-        recaptchaSiteKey: "6LfUvAMqAAAAADxCyiWMxlbxeiobQOPqTs-rFIV3"
+        formEndpoint: '',
+        recaptchaSiteKey: ''
       }
     }
   },
   
-  app:{
-    head: {
-      meta: [
-        { charset: "utf-8" },
-        { name: "viewport", content: "width=device-width, initial-scale=1" },
-      ],
-      link: [
-        { rel: "icon", href: "/favicon.ico" }, 
-        { rel: "apple-touch-icon", type: "image/png", href: "/_nuxt/site-logo01.CgLjQvva.png" }, 
-      ],
-    },
-  },
+  // app:{
+  //   head: {
+  //     meta: [
+  //       { charset: "utf-8" },
+  //       { name: "viewport", content: "width=device-width, initial-scale=1" },
+  //     ],
+  //   },
+  // },
   // 使用するscssファイルを指定
   css: ["@/assets/styles/style.scss"],
 
   // ↓microCMSモジュール導入
-  modules: ["@nuxt/image"],
+  // modules: ["@nuxt/image"],
 })

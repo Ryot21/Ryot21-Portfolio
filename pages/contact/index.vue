@@ -45,13 +45,6 @@
 			formData.append(key, value)
 		})
 
-		// await fetch(config.public.newt.formEndpoint, {
-		// 	method: 'POST',
-		// 	body: formData,
-		// 	headers: {
-		// 		Accept: 'application/json'
-		// 	}
-		// })
 		try {
 			const response = await fetch(config.public.newt.formEndpoint, {
 				method: 'POST',
@@ -100,7 +93,7 @@
 
 
 				<!-- お問い合わせフォーム -->
-				<form @submit="onSubmit" class=" a-fade -tm1 -sp1">
+				<form @submit="onSubmit" class="a-fade -tm1 -sp1">
 				<!-- <form :action="config.public.newt.formEndpoint" method="post"> -->
 					<dl class="mgb3 mgb5s">
 						<dd class="mgb1 mgb2s"><label class="required s-L -left -ws-n -ls-2" for="subject">件名</label></dd>
