@@ -8,8 +8,8 @@ export default defineNuxtConfig({
     apiKey: API_KEY,
     public: {
       newt: {
-        formEndpoint: NUXT_PUBLIC_NEWT_FORM_ENDPOINT,
-        recaptchaSiteKey: NUXT_PUBLIC_NEWT_RECAPTCHA_SITE_KEY
+        formEndpoint: "https://ryot21-portfolio.form.newt.so/v1/UetdDsD8V",
+        recaptchaSiteKey: "6LfUvAMqAAAAADxCyiWMxlbxeiobQOPqTs-rFIV3"
       }
     }
   },
