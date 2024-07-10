@@ -47,18 +47,39 @@
 
 			<!-- 今まで制作したWEBサイトのご紹介 -->
 			<div class="c-contents mgb20 mgb20s">
-				<ul class="c-flex -col2_3 a-fade -tm1 -sp1">
+				<ul class="a-fade -tm1 -sp1">
+					<li v-for="blog in blogs?.contents" :key="blog.id" class="mgb2 mgb3s">
+						<NuxtLink :to="`/media/blog/${blog.id}`" class="c-link -img">
+							<div class="c-flex -blogLists">
+								<div class="flexItem -blogItem">
+									<div v-if="blog.thumbnail" class="c-archive__img c-blogArea__img a-zoomImg">
+										<div class="imgBox a-imgMono mgb3 mgb3s"><img :src="blog.thumbnail.url"></div>
+									</div>
+								</div>
+								<div class="flexItem -blogItem">
+									<p class="c-blogArea__day s-S -left mgb1 mgb1s a-fade -sp1">{{ blog.date }}</p>
+									<p class="s-ML -s14 -b -left">{{ blog.title }}</p>
+									<!-- <p class="s-SS -detail -right">詳しく見る</p> -->
+								</div>
+							</div>
+
+						</NuxtLink>
+					</li>
+				</ul>
+
+				<!-- ３カラム表示の場合 -->
+				<!-- <ul class="c-flex -col2_3 a-fade -tm1 -sp1">
 					<li v-for="blog in blogs?.contents" :key="blog.id" class="flexItem mgb5 mgb5s">
 						<NuxtLink :to="`/media/blog/${blog.id}`" class="">
 							<div v-if="blog.thumbnail" class="c-archive__img c-blogArea__img a-zoomImg">
 								<div class="imgBox a-imgMono mgb3 mgb3s"><img :src="blog.thumbnail.url"></div>
 							</div>
+							<p class="c-blogArea__day s-S -left mgb2 mgb2s a-fade -sp1">{{ blog.date }}</p>
 							<p class="s-ML -s14 -b -left mgb3 mgb3s">{{ blog.title }}</p>
-							<p class="s-SS -detail">詳しく見る</p>
+							<p class="s-SS -detail -right">詳しく見る</p>
 						</NuxtLink>
 					</li>
-
-				</ul>
+				</ul> -->
 			</div>
 		</div>
 	</div>
