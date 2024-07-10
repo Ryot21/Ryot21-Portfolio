@@ -41,14 +41,16 @@
 			display: inline-block;
 			width: auto;
 			&::before{
-				content: "";
-				position: absolute;
-				bottom: -5%;
-				left: 50%;
-				transform: translateX(-50%);
-				width: 125%;
-				height: 1px;
 				background: #545353;
+				bottom: -5%;
+				content: "";
+				height: 1px;
+				left: 45%;
+				position: absolute;
+				transform: translate(-50%);
+				width: 110%;
+				border-radius: 30px;
+
 			}
 			&::after{
 				content: "";
@@ -59,7 +61,8 @@
 
 				width: 8px;
 				height: 1px;
-				background-color: #545353;
+				background: #545353;
+				border-radius: 30px;
 
 			transform: rotate(-130deg);
 			transform-origin: left bottom;
