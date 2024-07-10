@@ -46,7 +46,7 @@
 				bottom: -5%;
 				left: 50%;
 				transform: translateX(-50%);
-				width: 100%;
+				width: 125%;
 				height: 1px;
 				background: #545353;
 			}

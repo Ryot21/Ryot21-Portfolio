@@ -26,16 +26,19 @@
 			}
 		}
 	}
-	&.-img{
+	&.-img,
+	.__ContentImg{
 		display: block;
-        transform: scale(1);
-        transition-duration: 0.5s;
-		transition: all 0.5s ease-in-out;
-        overflow: hidden;
+    transform: scale(1);
+    transition-duration: .75s;
+		transition: all .75s;
+    overflow: hidden;
 		&:hover{
 			transform: scale(1.025);
-			transition-duration: 0.2s;
-			// box-shadow: 1px 1px 4px 0px $item-hover--bg;
+			transition-duration: .75s;
+			.__ContentImg{
+				transform: scale(1.05);
+			}
 		}
 	}
 	&.-text{

@@ -18,7 +18,7 @@
 		&:last-child{
 			animation-delay: .75s;
 			margin-bottom: 0;
-			@include max(768){display: none;}
+			// @include max(768){display: none;}
 		}
 		.imgBox{
 			border: 1px solid $main-color--gray;
