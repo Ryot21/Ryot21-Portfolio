@@ -241,6 +241,12 @@
 .pdr3s  {@include max(768){padding-right: 3% !important;}}
 .pdr4s  {@include max(768){padding-right: 4% !important;}}
 .pdr5s  {@include max(768){padding-right: 5% !important;}}
+.pdr6s  {@include max(768){padding-right: 6% !important;}}
+.pdr7s  {@include max(768){padding-right: 7% !important;}}
+.pdr8s  {@include max(768){padding-right: 8% !important;}}
+.pdr9s  {@include max(768){padding-right: 9% !important;}}
+.pdr10s {@include max(768){padding-right: 10% !important;}}
+
 
 // 768px以上
 .pdr0  {@include min(768){padding-right: 0  !important;}}
@@ -249,5 +255,11 @@
 .pdr3  {@include min(768){padding-right: 3% !important;}}
 .pdr4  {@include min(768){padding-right: 4% !important;}}
 .pdr5  {@include min(768){padding-right: 5% !important;}}
+.pdr6  {@include min(768){padding-right: 6% !important;}}
+.pdr7  {@include min(768){padding-right: 7% !important;}}
+.pdr8  {@include min(768){padding-right: 8% !important;}}
+.pdr9  {@include min(768){padding-right: 9% !important;}}
+.pdr10 {@include min(768){padding-right: 10% !important;}}
+.pdr15 {@include min(768){padding-right: 15% !important;}}
 
 .pd0 {padding:0!important;}

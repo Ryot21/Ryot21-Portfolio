@@ -19,7 +19,7 @@
 				<!-- ページ説明 -->
 				<div class="c-profile mgb10 mgb10s">
 					<ruby class="s-S -ls-2 -left">お問い合わせありがとうございます。</ruby>
-					<h2 class="c-profile__title s-3L -b -ls-2 -left">CONTACT COMPLETE</h2>
+					<h2 class="c-profile__title s-3L -b -ls-2 -left pdr10 pdr10s">CONTACT COMPLETE</h2>
 				</div>
 				<p class="c-profile__des s-M -center -lh-2 -ls-2 mgb10 mgb10s">
 					お問い合わせありがとうございます！<br><br class="sp">

@@ -14,7 +14,7 @@
 				<!-- ページ説明 -->
 				<div class="c-profile mgb10 mgb10s">
 					<ruby class="s-S -ls-2 -left">お問い合わせの送信が出来ませんでした。</ruby>
-					<h2 class="c-profile__title s-3L -b -ls-2 -left">SEND ERROR</h2>
+					<h2 class="c-profile__title s-3L -b -ls-2 -left pdr10 pdr10s">SEND ERROR</h2>
 				</div>
 				<p class="c-profile__des s-M -center -lh-2 -ls-2 mgb10 mgb10s">
 					エラーが発生したため、<br class="sp">お問い合わせが送信出来ませんでした。<br><br class="sp">

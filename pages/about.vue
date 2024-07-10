@@ -26,7 +26,7 @@
 				<!-- ページ説明 -->
 				<div class="c-profile mgb5 mgb10s a-fade -sp1">
 					<ruby class="s-S -ls-2 -left">{{ t }}</ruby>
-					<h2 class="c-profile__title s-3L -b -ls-2 -left">{{ sTE }}<span class="s-S">{{ sTJ }}</span></h2>
+					<h2 class="c-profile__title s-3L -b -ls-2 -left pdr10 pdr10s">{{ sTE }}<span class="s-S">{{ sTJ }}</span></h2>
 				</div>
 				<p class="c-profile__des s-M -left -lh-2 -ls-2 mgb10 mgb10s a-fade -tm05 -sp1">
 						1991年生まれの4児の父。<br>
