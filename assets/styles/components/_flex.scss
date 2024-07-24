@@ -5,21 +5,21 @@
 
     // 【 横_位置 】
     &.-jc-sb   {justify-content: space-between;}// 両端
-    &.-jc-sb_s {@include max(768){justify-content: space-between;}}
+    &.-jc-sb_s {@include max(768){justify-content: space-between !important;}}
     &.-jc-cen    {justify-content: center;}// 真ん中
-    &.-jc-cen_s  {@include max(768){justify-content: center;}}
+    &.-jc-cen_s  {@include max(768){justify-content: center !important;}}
     &.-jc-st    {justify-content: start;}// 左寄
-    &.-jc-st_s  {@include max(768){justify-content: start;}}
+    &.-jc-st_s  {@include max(768){justify-content: start !important;}}
     &.-jc-end    {justify-content: end;}// 右寄
-    &.-jc-end_s  {@include max(768){justify-content: end;}}
+    &.-jc-end_s  {@include max(768){justify-content: end !important;}}
 
     //【 縦_位置 】
     &.-h-cen    {align-items: center;}// 真ん中
-    &.-h-cen_pc {@include min(768){align-items: center;}}
+    &.-h-cen_pc {@include min(768){align-items: center !important;}}
     &.-h-top    {align-items: flex-start;}// 上
-    &.-h-top_pc {@include min(768){align-items: flex-start;}}
+    &.-h-top_pc {@include min(768){align-items: flex-start !important;}}
     &.-h-btm    {align-items: flex-end;}// 下
-    &.-h-btm_pc {@include min(768){align-items: flex-end;}}
+    &.-h-btm_pc {@include min(768){align-items: flex-end !important;}}
 
     // 【 反転 】
     &.-r{ flex-direction: row-reverse !important;}
@@ -95,7 +95,14 @@
     &.-col2_3{
         .flexItem{// li
             width: 48.5%;
-            @include min(768){width: 32%;}
+            @include min(768){
+                width: 32%;
+                &:nth-child(2),
+                &:nth-child(5){
+                    margin-right: 2%;
+                    margin-left: 2%;
+                }
+            }
         }
     }
     // コンテンツカラム（sp:pc 2:4）

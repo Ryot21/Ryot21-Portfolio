@@ -13,7 +13,7 @@
 
 <template>
 	<!-- 今まで制作したWEBサイトのご紹介 -->
-		<ul class="c-flex -col2_3 -jc-sb mgb5 mgb5s a-fade -tm1 -sp2">
+		<ul class="c-flex -col2_3 -jc-st -jc-sb_s mgb5 mgb5s a-fade -tm1 -sp2">
 			<li v-for="post in posts" :key="post.id" class="flexItem mgb5 mgb5s">
 				<NuxtLink :to="`/product/${post.id}`" class="c-link -img">
 					<div class="c-archive__img">

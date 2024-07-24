@@ -50,28 +50,22 @@
 }
 
 .c-borderBox{
-    padding: 3%;
-    @include min(768){
-        // width: 95%;
-        width: 100%;
-        padding: 1% 1% 2%;
-        margin-right: 0;
-        margin-left: auto;
-    }
-    span{
-        padding: 0 5px;
-    }
+    padding: 1px 5px 3px;
+    span{padding: 0 5px;}
     &.-double{
-        border: 4px double $site-color01;
+        border: 4px double $main-color--b;
         @include min(768){
-            border: 7px double $site-color01;
+            border: 7px double $main-color--b;
         }
     }
     &.-solid{
-        border: 1px solid $site-color01;
+        border: 1px solid $main-color--b;
         @include min(768){
-            border: 1px solid $site-color01;
+            border: 1px solid $main-color--b;
         }
+    }
+    &.-left{
+        border-left: 1px solid $main-color--b;
     }
 }
 

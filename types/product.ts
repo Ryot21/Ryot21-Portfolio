@@ -7,10 +7,18 @@ export type Tag = {
 export type Product = {
   title: string;
   clientName: string;
+  genre: string;
   date: Date;
   tag: Tag[];
   description: string;
   url: string;
   thumbnail: MicroCMSImage;
-  images: MicroCMSImage;
+  // images: MicroCMSImage;
+  images: {
+    workImage:MicroCMSImage;
+    // workImage:{
+    //   url:string;
+    // };
+  };
+
 } & MicroCMSListContent;

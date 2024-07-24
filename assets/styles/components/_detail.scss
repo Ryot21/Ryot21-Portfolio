@@ -42,6 +42,13 @@
 	// &__day{
 
 	// }
+	&__genreLists{
+		display: flex;
+		flex-wrap: wrap;
+		li{
+			margin-right: 5px;
+		}
+	}
 	&__categoryLists{
 		display: flex;
 		flex-wrap: nowrap;

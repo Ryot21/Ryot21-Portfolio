@@ -9,13 +9,11 @@
 		})
 		useHead({title: article.value?.title + " | Ryot21-Portfolio",})
 
-
 		if (!article.value) {
 			throw createError({
 				statusCode: 404, statusMessage: 'お探しのページが見つかりません'
 			})
 		}
-
 </script>
 
 
@@ -29,7 +27,7 @@
 				<li class="c-detailArea__left mgb5s">
 					<ul class="c-detailArea__imgLists">
 						<!-- 1枚目 -->
-						<li v-for="image in article.images.workImage" :key="image" class="c-detailArea__imgItem a-fade -tm2 -sp1">
+						<li v-for="image in article.images.workImage" :key="image" class="c-detailArea__imgItem a-fade -tm25 -sp1">
 							<div class="c-detailArea__img">
 								<div class="imgBox">
 									<img :src="image.url" alt="制作したサイトの実際の画像" />
@@ -37,39 +35,52 @@
 							</div>
 						</li>
 					</ul>
-
 				</li>
 				<li class="c-detailArea__right mgb20s">
 
 					<!-- タイトル -->
-					<h2  class="c-detailArea__title s-LL mgb2 mgb2s a-fade -sp1">{{ article.title }}</h2>
+					<h2 class="c-detailArea__title s-LL -ls-1 mgb2 mgb2s a-fade -sp1">{{ article.title }}</h2>
 
 					<!-- リリース日 -->
-					<p   class="c-detailArea__day s-S mgb5 mgb10s a-fade -sp1">リリース日 : {{ article.date }}</p>
+					<p class="c-detailArea__day s-S -ls-1 mgb5 mgb10s a-fade -sp1">リリース日 : {{ article.date }}</p>
+
+					<!-- ジャンル -->
+					<div class="mgb5 mgb5s a-fade -tm05 -sp1">
+						<h3 class="c-detailArea__subTitle -left mgb2 mgb2s"><span class="s-ML -b">ジャンル</span></h3>
+						<ul class="c-detailArea__genreLists c-flex -h-cen">
+							<li v-for="(label, labelIndex) in article?.genre" :key="labelIndex"  class="">
+								<p class="s-S -s10 -ls-1">- {{ label }}</p>
+							</li>
+						</ul>
+					</div>
 
 					<!-- タグ_サイト種類 -->
-					<h3   class="c-detailArea__subTitle -left mgb2 mgb2s a-fade -tm05 -sp1"><span class="s-ML -b">種類</span></h3>
-					<ul class="c-detailArea__categoryLists mgb5 mgb5s a-fade -tm05 -sp1">
-						<li v-for="label in article?.tag" :key="label" class="mgb1">
-							<p class="s-S -s12">#{{ label.name }}</p>
-						</li>
-					</ul>
+					<div class="mgb5 mgb5s a-fade -tm1 -sp1">
+						<h3 class="c-detailArea__subTitle -left -ls-1 mgb2 mgb2s"><span class="s-ML -b">種類</span></h3>
+						<ul class="c-detailArea__categoryLists">
+							<li v-for="(label, labelIndex) in article?.tag" :key="labelIndex" class="mgb1">
+								<p class="s-S -s10 -ls-1">#{{ label.name }}</p>
+							</li>
+						</ul>
+					</div>
 
 					<!-- 説明 -->
-					<div v-if="article.description" class="a-fade -tm1 -sp1">
-						<h3   class="c-detailArea__subTitle -left mgb2 mgb2s"><span class="s-ML -b">説明</span></h3>
-						<p   class="c-detailArea__text s-S -s12 -lh-2 -left mgb5 mgb5s">{{ article.description }}</p>
+					<div v-if="article.description" class="mgb5 mgb5s a-fade -tm15 -sp1">
+						<h3 class="c-detailArea__subTitle -left -ls-1 mgb2 mgb2s"><span class="s-ML -b">説明</span></h3>
+						<p  class="c-detailArea__text s-S -s12 -lh-2 -left">{{ article.description }}</p>
 					</div>
 
 					<!-- URL -->
-					<div class=" a-fade -tm15 -sp1">
-						<h3   class="c-detailArea__subTitle -left mgb2 mgb2s"><span class="s-ML -b">URL</span></h3>
-						<p   class="c-detailArea__link s-S -s12 -lh-2 -left mgb10 mgb5s">{{ article.url }}</p>
+					<div class="mgb5 mgb5s a-fade -tm15 -sp1">
+						<h3 class="c-detailArea__subTitle -left mgb2 mgb2s"><span class="s-ML -b -ls-1">URL</span></h3>
+						<p  class="c-detailArea__link s-S -s12 -ls-1 -lh-2 -left">{{ article.url }}</p>
 					</div>
+
 					<!-- CONTACTページに戻る -->
-					<div class="c-btn -pageLink -right a-fade -tm2 -sp1">
+					<div class="c-btn -pageLink -right mgb20s a-fade -tm2 -sp1">
 						<NuxtLink to="/contact" class="s-M -center">制作のご依頼</NuxtLink>
 					</div>
+
 				</li>
 			</ul>
 		</div>
