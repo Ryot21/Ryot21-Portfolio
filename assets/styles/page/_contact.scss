@@ -1,19 +1,4 @@
-// 6. 周辺環境ページ
-
-.p-contact{
-	width: 100lvw;
-	height: 100lvh;
-	animation: fadeAnime 2s forwards;
-	@include min(768){
-		animation: fadeAnime 2s forwards;
-	}
-	.testBox{
-		width: 100vw;
-		height: 150vh;
-		background: rgba(0, 0, 0, 0.392);
-	}
-}
-
+// お問い合わせページ
 
 label{
 	&.required{

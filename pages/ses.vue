@@ -21,13 +21,13 @@
 				<!-- パンくず -->
 				<PartsBreadcrumb/>
 
-				<div class="c-profile mgb5 mgb10s a-fade -sp1">
+				<div class="c-profile mgb5 mgb10s">
 					<ruby class="s-S -ls-2 -left">{{ t }}</ruby>
 					<h2 class="c-profile__title s-3L -b -ls-2 -left pdr10 pdr10s">{{ sTE }}<span class="s-S -ls-1">{{ sTJ }}</span></h2>
 				</div>
-				<p class="c-profile__des s-M -left -lh-2 -ls-2 mgb10 mgb10s a-fade -tm05 -sp1">{{ des }}</p>
+				<p class="c-profile__des s-M -left -lh-2 -ls-2 mgb10 mgb10s">{{ des }}</p>
 				<!-- お問い合わせページへ -->
-				<div class="c-btn -pageLink -right a-fade -tm1 -sp1">
+				<div class="c-btn -pageLink -right a-fade -sp1">
 					<NuxtLink to="/contact" class="s-M -center">お問い合わせ</NuxtLink>
 				</div>
 			</div>

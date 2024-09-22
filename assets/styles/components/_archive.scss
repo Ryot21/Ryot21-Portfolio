@@ -13,10 +13,10 @@
 		padding: 3% 3% 1%;
 		margin-bottom: 5%;
 		@include min(768){margin-bottom: 5%;}
-		&:nth-child(1){animation-delay:.1s;}
-		&:nth-child(2){animation-delay:.5s;}
+		// &:nth-child(1){animation-delay:.1s;}
+		// &:nth-child(2){animation-delay:.5s;}
 		&:last-child{
-			animation-delay: .75s;
+			// animation-delay: .75s;
 			margin-bottom: 0;
 			// @include max(768){display: none;}
 		}
