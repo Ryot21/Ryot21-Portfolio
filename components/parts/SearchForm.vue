@@ -33,7 +33,7 @@ function submit() {
 	<div class="c-search__area mgb3 mgb5s a-fade -tm1 -sp1">
 		<!-- 検索フォーム -->
 		<form class="c-search__form" @submit.prevent="submit">
-            <input id="search-input" type="text" v-model="query" ref="searchForm" placeholder="検索してみてね">
+            <input id="search-input" type="text" v-model="query" ref="searchForm" placeholder="キーワードを入力">
 		</form>
 	</div>
 </template>

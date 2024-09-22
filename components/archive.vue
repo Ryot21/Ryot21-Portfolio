@@ -32,7 +32,7 @@
 </script>
 
 <template>
-	<div class="c-contents mgb20 mgb20s">
+	<div class="c-contents mgb20 mgb10s">
 
 		<!-- 検索フォーム -->
 		<PartsSearchForm/>
