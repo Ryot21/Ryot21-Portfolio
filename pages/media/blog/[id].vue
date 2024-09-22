@@ -29,12 +29,6 @@
 			<PartsBreadcrumb />
 
 			<div class="c-blogArea">
-					<!-- 画像 -->
-					<!-- <div v-for="image in article?.images" :key="image" class="c-blogArea__img mgb8 mgb10s a-fadeUp -sp1">
-						<div v-if="image" class="imgBox">
-							<img :src="image.url" alt="ブログ画像">
-						</div>
-					</div> -->
 					<!-- タイトル -->
 					<h2  class="c-blogArea__title s-LL -left mgb2 mgb2s a-fade -sp1">{{ article.title }}</h2>
 					<!-- カテゴリー -->
@@ -52,7 +46,12 @@
 
 					<!-- 本文 -->
 					<p class="c-blogArea__text s-ML -s12 -lh-2 mgb5 mgb5s a-fade -tm05 -sp1">{{ article.text }}</p>
-
+					<!-- 画像 -->
+					<div v-for="image in article?.images" :key="image" class="c-blogArea__img mgb8 mgb10s a-fadeUp -sp1">
+						<div v-if="image" class="imgBox">
+							<img :src="image.url" alt="ブログ画像">
+						</div>
+					</div>
 					<!-- 書籍(未実装) -->
 					<!-- <div v-if="data.book">
 						<h3 class="c-detailArea__subTitle -left mgb2 mgb2s"><span class="s-ML -b">参考書籍</span></h3>
