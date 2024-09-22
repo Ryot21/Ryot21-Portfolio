@@ -25,9 +25,9 @@
 		#search-input{
 			appearance:none;/*SafariやChromeのデフォルトの設定を無効*/
 			width: 200px;
-			height: 25px;
+			// height: 25px;
 			// padding: 12.5px;
-			padding: 12.5px 0 12.5px 25px;
+			padding: 2px 0 3px 25px;
 			border: 1px solid $main-color--b;
 			background: url("/icon-search.svg") transparent no-repeat 7px center;/*虫眼鏡アイコンを背景に表示*/
 			background-size: 12px 12px;
@@ -36,17 +36,21 @@
 			cursor: pointer;
 			@include min(768){
 				width: 250px;
-				height: 35px;
+				// height: 35px;
 				// padding: 15.5px;
-				padding: 15.5px 0 15.5px 30px;
+				padding: 5.5px 0 5.5px 30px;
 				border: 1px solid $main-color--b;
 				background: url("/icon-search.svg") transparent no-repeat 9px center;/*虫眼鏡アイコンを背景に表示*/
 				background-size: 15px 15px;
 			}
 
 			&::placeholder{
+				font-size: 1.2rem;
 				color: $main-color--b;
 				transition: all 1s;
+				@include min(768){
+					font-size: 1.5rem;
+				}
 			}
 
 			// &:focus{
