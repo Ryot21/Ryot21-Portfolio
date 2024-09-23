@@ -1,6 +1,6 @@
 <template>
-    <footer id="footer" class="c-footer mgt-2">
-        <div class="c-footer-wrapper -v02 mgb2 mgb10s">
+    <footer id="footer" class="c-footer">
+        <div class="c-footer-wrapper -v02 mgb3 mgb10s">
             <nav class="c-footer__navArea">
                 <ul class="c-footer__navLists -col6">
                     <!-- アクティブ箇所に「.-active」を付与して下さい。 -->

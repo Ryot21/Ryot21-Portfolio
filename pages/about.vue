@@ -19,7 +19,7 @@
 	<div>
 		<!-- <picView /> -->
 		<div class="c-contents mgt-contents">
-			<div class="c-contents__inner w1100 mgb20 mgb20s">
+			<div class="c-contents__inner w1100 mgb10 mgb20s">
 				<!-- パンくず -->
 				<PartsBreadcrumb/>
 
