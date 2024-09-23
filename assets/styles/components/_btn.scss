@@ -78,13 +78,13 @@ button{
 	}
 	&-top{
 		position: fixed;
-    bottom: 19px;
+    	bottom: 19px;
 		right: 19px;
 		width: 4rem;
 		height: 4rem;
 		line-height: 3.5rem;
 		background: white;
-    border: 1px solid $main-color--b;
+    	border: 1px solid $main-color--b;
 		box-shadow: 2px 3px 5px 0px #3b3b3b54;
 		cursor: pointer;
 		transition: all .5s;
@@ -104,6 +104,7 @@ button{
 		width: 35%;
 		margin: auto;
 		border: 1px solid $main-color--b;
+		border-radius: 5px;
 		transition: all .5s;
 		@include min(768){
 			width: 200px;

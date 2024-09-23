@@ -19,6 +19,10 @@
 			})
 		}
 
+		// import { useFetch } from '#app'
+		// リッチエディターの内容を取得
+		const richContent = article.value?.mainText || ''
+
 </script>
 
 
@@ -45,7 +49,12 @@
 					<p class="c-blogArea__day s-S -right mgb5 mgb10s a-fade -sp1">{{ article.date }}</p>
 
 					<!-- 本文 -->
-					<p class="c-blogArea__text s-ML -s12 -lh-2 mgb5 mgb5s a-fade -tm05 -sp1">{{ article.text }}</p>
+					<p v-if="article.text" class="c-blogArea__text s-ML -s12 -lh-2 mgb5 mgb5s a-fade -tm05 -sp1">{{ article.text }}</p>
+					
+					<!-- リッチエディター -->
+					<div v-html="richContent" v-if="article.mainText" class="c-blogArea__richContent s-ML -s12 -lh-2 mgb5 mgb5s a-fade -tm05 -sp1">
+					</div>
+
 					<!-- 画像 -->
 					<div v-for="image in article?.images" :key="image" class="c-blogArea__img mgb8 mgb10s a-fadeUp -sp1">
 						<div v-if="image" class="imgBox">

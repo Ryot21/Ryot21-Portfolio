@@ -9,6 +9,45 @@
 	&__day{
 
 	}
+	&__richContent{//リッチテキスト関係
+		@include min(768){
+			margin: 0 5%;
+		}
+		p{
+			font-size: 1.4rem;
+			line-height: 1.5;
+			margin-bottom:5% !important;
+
+            @include min(768){
+				font-size: clamp(1.6rem, 2vw, 2rem);
+				margin-bottom:3% !important;
+			}
+		}
+		a{
+			color: $main-color--red;
+			text-decoration: underline;
+			transition: all .5s;
+			&:hover{
+				opacity: .5;
+			}
+		}
+		figure{
+			margin: 0 0 15%;
+			border-radius: 10px;
+			overflow: hidden;
+			@include min(768){
+				margin: 0 0 10%;
+			}
+			&:hover img{
+				transform: scale(1.03);
+			}
+			img{
+				border-radius: 10px;
+				box-shadow: 3px 3px 5px $main-color--Dgray;
+				transition: all 1s;
+			}
+		}
+	}
 	&__categoryLists{// ul
 		display: flex;
 		flex-wrap: wrap;
@@ -20,6 +59,7 @@
 		padding: 1% 2%;
 		background: $main-color--w;
 		border: 1px solid $main-color--b;
+		border-radius: 5px;
 		@include min(768){padding: 2% 2% 3%;}
 	}
 }
