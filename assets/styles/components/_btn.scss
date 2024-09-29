@@ -10,72 +10,6 @@ button{
 
 
 .c-btn{
-	&-fixed{//SP 画面下固定/PC 画面右固定
-		position: fixed;
-		top: auto;
-		left: 50%;
-		bottom: 0;
-		color: $site-color02;
-		cursor: pointer;
-		z-index: 99;
-		@include max(768){
-			border: 1px solid $site-color02;
-			box-shadow: 0 2px 4px $main-color--b;
-			transform: translateX(-50%);
-		}
-		@include min(768){
-			top: 25%;
-			left: auto;
-			bottom: auto;
-			right: 25px;
-			border: 1px solid $site-color02;
-			box-shadow: 0 2px 4px $site-color02;
-		}
-		.c-btn-lists{
-			display: flex;
-			flex-wrap: nowrap;
-			width: auto;
-			@include min(768){
-				flex-wrap: wrap;
-				flex-direction: column;
-			}
-			li{
-				position: relative;
-				width: 50vw;
-				@include max(768){
-					&:first-child a{
-						color: $main-color--w;
-						background: $site-color01;
-					}
-					&:nth-child(2) a{
-						color: $main-color--w;
-						background: $site-color02;
-					}
-				}
-				@include min(768){
-					width: auto;
-					writing-mode: vertical-rl;
-				}
-				&:first-child{
-					@include max(768){border-right: 1px solid $site-color01;}
-					@include min(768){border-bottom: 1px solid $site-color01;}
-				}
-				a{
-					width: 100%;
-					padding: 6% 0;
-					background: $main-color--w;
-					@include min(768){
-						width: auto;
-						padding: 30px 10%;
-					}
-					&:hover{
-						background: $site-color02;
-						color: $main-color--w !important;
-					}
-				}
-			}
-		}
-	}
 	&-top{
 		position: fixed;
     	bottom: 19px;
@@ -197,6 +131,36 @@ button{
 		// 左寄せ
 		&.-right{
 			margin: auto 0 auto auto;
+		}
+	}
+	&.-switch{
+		width: 100%;
+		max-width: 120px;
+		.flexItem{
+			button{
+				padding: 5px 0 0;
+				background: $main-color--w;
+				border: 2px solid $main-color--Dgray;
+				border-radius: 5px;
+				transition: all 1s;
+				&:hover{
+					background: $main-color--gray;
+					border: 2px solid $main-color--b;
+					// opacity: .5;
+				}
+				&.active{
+					background: $main-color--Dgray;
+					border: 2px solid $main-color--b;
+					pointer-events: none;
+				}
+				svg{
+					width: 50%;
+					&#pc-icon,
+					&#sp-icon{
+						.cls-1{opacity: 0;}
+					}
+				}
+			}
 		}
 	}
 }
